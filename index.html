@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AgiDron Solutions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/styles/styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header" id="inicio">
+        <div class="logo" aria-label="AgiDron Solutions logo">
+          <div class="logo-mark">
+            <span class="leaf leaf-1"></span>
+            <span class="leaf leaf-2"></span>
+            <span class="leaf leaf-3"></span>
+            <span class="leaf leaf-4"></span>
+            <span class="center-dot"></span>
+          </div>
+          <div class="brand-text">
+            <span class="brand-name">AgriDron</span>
+            <span class="brand-sub">Solutions</span>
+          </div>
+        </div>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          id="nav-toggle"
+          aria-label="Abrir menú de navegación"
+          aria-expanded="false"
+          aria-controls="nav-collapse"
+        >
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+
+        <div class="nav-collapse" id="nav-collapse">
+          <nav class="main-nav" aria-label="Navegación principal">
+            <a href="#inicio">Inicio</a>
+            <a href="#features">Funcionalidades</a>
+            <a href="#how-it-works">Cómo Funciona</a>
+            <a href="#audiences">Para Quién</a>
+            <a href="#team-section">Nuestro Equipo</a>
+          </nav>
+
+          <a href="login.html" class="demo-button">Solicitar Demo</a>
+        </div>
+      </header>
+
+      <main class="hero">
+        <div class="hero-copy">
+          <h1>
+            Revoluciona la salud de<br />
+            tus cultivos con precisión<br />
+            automatizada.
+          </h1>
+
+          <p>
+            Plataforma para la planificación y monitoreo de<br />
+            operaciones de fumigación agrícola mediante drones.
+          </p>
+
+          <div class="benefits" aria-label="Beneficios">
+            <div class="benefit-item">
+              <span class="icon cost-icon" aria-hidden="true">
+                <svg viewBox="0 0 32 32" role="img" aria-label="Reduce costos">
+                  <path d="M16 7.5v11.8" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+                  <path d="M11.5 19l4.5 4.5 4.5-4.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M9.5 12.5c0-2.9 2.8-5.2 6.5-5.2s6.5 2.3 6.5 5.2-2.8 5.2-6.5 5.2c-3.7 0-6.5-2.3-6.5-5.2Z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+              <span>Reduce costos</span>
+            </div>
+            <div class="benefit-item">
+              <span class="icon productivity-icon" aria-hidden="true">
+                <svg viewBox="0 0 32 32" role="img" aria-label="Aumenta tu productividad">
+                  <path d="M7 23.5h18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+                  <path d="M9.5 18.5 14 14l4 4.5 6.5-8.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M20.5 10h5v5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+              <span>Aumenta tu productividad</span>
+            </div>
+            <div class="benefit-item">
+              <span class="icon shield-icon" aria-hidden="true">
+                <svg viewBox="0 0 32 32" role="img" aria-label="Protege a tu equipo">
+                  <path d="M16 5.5 24 8.7v7.1c0 5.1-3.3 9.7-8 12.4-4.7-2.7-8-7.3-8-12.4V8.7l8-3.2Z" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linejoin="round"/>
+                  <path d="M12.2 16.3 15 19.2l4.8-5.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+              <span>Protege a tu equipo</span>
+            </div>
+          </div>
+
+          <div class="cta-row">
+            <button class="primary-cta">Empieza tu prueba gratuita <span>→</span></button>
+            <button class="secondary-cta">
+              <span class="play-icon"></span>
+              Ver cómo funciona
+            </button>
+          </div>
+        </div>
+
+        <div class="scene" aria-label="Imagen placeholder de la plataforma AgriDron">
+          <div class="scene-placeholder">
+            <img src="./images/hero-agricultura.jpg" alt="Campo agrícola" />
+          </div>
+        </div>
+      </main>
+
+      <section class="features" id="features">
+        <div class="features-header">
+          <h2>Nuestras funcionalidades</h2>
+          <p>Todo lo que necesitas para una fumigación agrícola más eficiente.</p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card">
+            <div class="feature-icon green">
+              <svg viewBox="0 0 64 64" aria-hidden="true">
+                <path d="M22 16h20a5 5 0 0 1 5 5v26a6 6 0 0 1-6 6H23a6 6 0 0 1-6-6V21a5 5 0 0 1 5-5Z" fill="none" stroke="white" stroke-width="3" stroke-linejoin="round"/>
+                <path d="M24 16v-4h16v4" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M24 26h16M24 34h16M24 42h10" fill="none" stroke="white" stroke-width="3" stroke-linecap="round"/>
+                <path d="M38 42l4 4 7-8" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3>Planificación de misiones</h3>
+            <p>
+              Define áreas de fumigación en un mapa interactivo, programa tus misiones
+              y optimiza recursos.
+            </p>
+            <div class="feature-arrow">→</div>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon blue">
+              <svg viewBox="0 0 64 64" aria-hidden="true">
+                <circle cx="32" cy="32" r="17" fill="none" stroke="white" stroke-width="3" opacity="0.9"/>
+                <circle cx="32" cy="32" r="10" fill="none" stroke="white" stroke-width="3" opacity="0.9"/>
+                <path d="M32 15V9M32 55v-6M49 32h6M9 32h6M44.5 19.5l4.2-4.2M15.3 48.7l4.2-4.2M19.5 19.5l-4.2-4.2M48.7 48.7l-4.2-4.2" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+                <circle cx="32" cy="32" r="3.5" fill="white"/>
+                <path d="M32 32L41 23" fill="none" stroke="white" stroke-width="3" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>Monitoreo en tiempo real</h3>
+            <p>
+              Visualiza la ubicación, estado y progreso de los drones durante la
+              operación.
+            </p>
+            <div class="feature-arrow">→</div>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon purple">
+              <svg viewBox="0 0 64 64" aria-hidden="true">
+                <path d="M32 14c-8.5 0-15.5 6.8-15.5 15.3 0 7.2 4.8 13.2 11.3 14.8V47h8.4v-2.9c6.5-1.6 11.3-7.6 11.3-14.8C47.5 20.8 40.5 14 32 14Z" fill="none" stroke="white" stroke-width="3" stroke-linejoin="round"/>
+                <path d="M32 54h0" fill="none" stroke="white" stroke-width="3" stroke-linecap="round"/>
+                <path d="M25 54h14" fill="none" stroke="white" stroke-width="3" stroke-linecap="round"/>
+                <path d="M27 26l4-6 4 6" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M32 22v9" fill="none" stroke="white" stroke-width="3" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>Consulta las condiciones climáticas</h3>
+            <p>
+              Consulta el pronóstico del clima y determina el momento adecuado para realizar tus misiones.
+            </p>
+            <div class="feature-arrow">→</div>
+          </article>
+        </div>
+      </section>
+
+      <section class="how-it-works" id="how-it-works">
+        <div class="section-title simple">
+          <h2>Cómo funciona</h2>
+          <p>En solo 4 pasos, lleva el control de tus operaciones.</p>
+        </div>
+
+        <div class="steps-row">
+          <div class="step-item">
+            <div class="step-badge green">1</div>
+            <div class="step-icon green">
+              <svg viewBox="0 0 64 64" aria-hidden="true">
+                <path d="M32 48s-12-10.4-12-21.5A12 12 0 0 1 44 26.5C44 37.6 32 48 32 48Z" fill="none" stroke="white" stroke-width="3" stroke-linejoin="round"/>
+                <circle cx="32" cy="26" r="5" fill="none" stroke="white" stroke-width="3"/>
+              </svg>
+            </div>
+            <h3>Planifica</h3>
+            <p>Selecciona tu parcela<br />y define el área en el mapa.</p>
+          </div>
+
+          <div class="step-arrow">→</div>
+
+          <div class="step-item">
+            <div class="step-badge blue">2</div>
+            <div class="step-icon blue">
+              <svg viewBox="0 0 64 64" aria-hidden="true">
+                <g fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="32" cy="32" r="9"/>
+                  <path d="M32 6v8M32 50v8M6 32h8M50 32h8M16 16l5 5M43 43l5 5M43 16l5 5M16 48l5-5"/>
+                </g>
+              </svg>
+            </div>
+            <h3>Consulta el clima</h3>
+            <p>Verifica las condiciones<br />meteorológicas.</p>
+          </div>
+
+          <div class="step-arrow">→</div>
+
+          <div class="step-item">
+            <div class="step-badge purple">3</div>
+            <div class="step-icon purple">
+              <svg viewBox="0 0 64 64" aria-hidden="true">
+                <path d="M22 18h20v8h-20zM18 26h28v20H18z" fill="none" stroke="white" stroke-width="3" stroke-linejoin="round"/>
+                <path d="M26 18V12h12v6M24 34h16M24 40h16M24 46h10" fill="none" stroke="white" stroke-width="3" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>Ejecuta</h3>
+            <p>Monitorea la misión<br />en tiempo real.</p>
+          </div>
+
+          <div class="step-arrow">→</div>
+
+          <div class="step-item">
+            <div class="step-badge green">4</div>
+            <div class="step-icon green">
+              <svg viewBox="0 0 64 64" aria-hidden="true">
+                <path d="M20 34l8 8 16-20" fill="none" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="32" cy="32" r="20" fill="none" stroke="white" stroke-width="3" opacity="0.8"/>
+              </svg>
+            </div>
+            <h3>Analiza</h3>
+            <p>Revisa reportes e historial<br />de tus operaciones.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="audiences" id="audiences">
+        <div class="section-title simple">
+          <h2>Para quién</h2>
+          <p>Una solución diseñada para cada actor del campo.</p>
+        </div>
+
+        <div class="audience-grid">
+          <article class="audience-card">
+            <div class="audience-image placeholder place-green">
+              <div class="placeholder-icon">
+                <svg viewBox="0 0 64 64" aria-hidden="true">
+                  <path d="M18 42V30L32 22L46 30V42H18Z" fill="none" stroke="white" stroke-width="3" stroke-linejoin="round"/>
+                  <path d="M24 42V31H40V42" fill="none" stroke="white" stroke-width="3" stroke-linejoin="round"/>
+                  <path d="M32 22V18" stroke="white" stroke-width="3" stroke-linecap="round"/>
+                </svg>
+              </div>
+            </div>
+            <div class="audience-body">
+              <h3>Agricultores</h3>
+              <p>Gestiona tus fincas, parcelas y operaciones desde una sola plataforma.</p>
+            </div>
+          </article>
+
+          <article class="audience-card">
+            <div class="audience-image placeholder place-blue">
+              <div class="placeholder-icon">
+                <svg viewBox="0 0 64 64" aria-hidden="true">
+                  <rect x="16" y="22" width="32" height="22" rx="8" fill="none" stroke="white" stroke-width="3"/>
+                  <path d="M28 16L32 22L36 16" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M22 40H42" stroke="white" stroke-width="3" stroke-linecap="round"/>
+                </svg>
+              </div>
+            </div>
+            <div class="audience-body">
+              <h3>Operadores</h3>
+              <p>Ejecuta y monitorea las misiones con información precisa y en tiempo real.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="team-section" id="team-section">
+        <div class="team-header">
+          <h2>Nuestro equipo</h2>
+          <p>Un grupo de profesionales apasionados por la tecnología y el campo.</p>
+        </div>
+
+        <div class="team-grid">
+          <div class="team-member">
+            <div class="member-avatar avatar-1"></div>
+            <div class="member-name">samir choquehuanca</div>
+            <div class="member-role">Desarrollador Frontend</div>
+          </div>
+
+          <div class="team-member">
+            <div class="member-avatar avatar-2"></div>
+            <div class="member-name">Edwin Nicho</div>
+            <div class="member-role">Desarrollador Backend</div>
+          </div>
+
+          <div class="team-member">
+            <div class="member-avatar avatar-3"></div>
+            <div class="member-name">Miguel Jara</div>
+            <div class="member-role">UX/UI Designer</div>
+          </div>
+
+          <div class="team-member">
+            <div class="member-avatar avatar-3"></div>
+            <div class="member-name">Galindo, Italo</div>
+            <div class="member-role">UX/UI Designer</div>
+          </div>
+
+          <div class="team-member">
+            <div class="member-avatar avatar-4"></div>
+            <div class="member-name">Alexander Vasquez</div>
+            <div class="member-role">Product Owner</div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="site-footer">
+        <div class="footer-inner">
+          <div class="footer-brand">
+            <div class="footer-logo">
+              <span class="leaf leaf-1"></span>
+              <span class="leaf leaf-2"></span>
+              <span class="leaf leaf-3"></span>
+              <span class="leaf leaf-4"></span>
+              <span class="center-dot"></span>
+            </div>
+            <div class="brand-text">
+              <span class="brand-name">AgriDron</span>
+              <span class="brand-sub">Solutions</span>
+            </div>
+          </div>
+
+          <div class="footer-links">
+            <h4>Enlaces</h4>
+            <ul>
+              <li>Inicio</li>
+              <li>Funcionalidades</li>
+              <li>Cómo Funciona</li>
+              <li>Para Quién</li>
+              <li>Nuestro Equipo</li>
+            </ul>
+          </div>
+
+          <div class="footer-contact">
+            <h4>Contacto</h4>
+            <ul>
+              <li>info@agridron.com</li>
+              <li>+51 987 654 321</li>
+              <li>Lima, Perú</li>
+            </ul>
+          </div>
+
+          <div class="footer-socials" aria-label="Redes sociales">
+            <span class="social fb">f</span>
+            <span class="social in">in</span>
+            <span class="social ig">◌</span>
+          </div>
+        </div>
+
+        <div class="copyright">© 2025 AgriDron Solutions. Todos los derechos reservados.</div>
+      </footer>
+    </div>
+
+    <script src="assets/scripts/scriptMenu.js"></script>
+  </body>
+</html>
