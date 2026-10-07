@@ -48,24 +48,23 @@
             <a href="#features">Funcionalidades</a>
             <a href="#how-it-works">Cómo Funciona</a>
             <a href="#audiences">Para Quién</a>
+            <a href="#planes">Planes</a>
+            <a href="#contacto">Contacto</a>
             <a href="#team-section">Nuestro Equipo</a>
           </nav>
 
-          <a href="login.html" class="demo-button">Solicitar Demo</a>
+          <a href="#contacto" class="demo-button">Solicitar Demo</a>
         </div>
       </header>
 
       <main class="hero">
         <div class="hero-copy">
           <h1>
-            Revoluciona la salud de<br />
-            tus cultivos con precisión<br />
-            automatizada.
+            Revoluciona la salud de tus cultivos con precisión automatizada.
           </h1>
 
           <p>
-            Plataforma para la planificación y monitoreo de<br />
-            operaciones de fumigación agrícola mediante drones.
+            Plataforma para la planificación y monitoreo de operaciones de fumigación agrícola mediante drones.
           </p>
 
           <div class="benefits" aria-label="Beneficios">
@@ -101,17 +100,17 @@
           </div>
 
           <div class="cta-row">
-            <button class="primary-cta">Empieza tu prueba gratuita <span>→</span></button>
-            <button class="secondary-cta">
+            <a class="primary-cta" href="#planes">Conoce nuestros planes <span>→</span></a>
+            <a class="secondary-cta" href="#how-it-works">
               <span class="play-icon"></span>
               Ver cómo funciona
-            </button>
+            </a>
           </div>
         </div>
 
         <div class="scene" aria-label="Imagen placeholder de la plataforma AgriDron">
           <div class="scene-placeholder">
-            <img src="./images/hero-agricultura.jpg" alt="Campo agrícola" />
+            <img src="assets/images/hero-agricultura.jpg" alt="Campo agrícola" />
           </div>
         </div>
       </main>
@@ -250,14 +249,8 @@
 
         <div class="audience-grid">
           <article class="audience-card">
-            <div class="audience-image placeholder place-green">
-              <div class="placeholder-icon">
-                <svg viewBox="0 0 64 64" aria-hidden="true">
-                  <path d="M18 42V30L32 22L46 30V42H18Z" fill="none" stroke="white" stroke-width="3" stroke-linejoin="round"/>
-                  <path d="M24 42V31H40V42" fill="none" stroke="white" stroke-width="3" stroke-linejoin="round"/>
-                  <path d="M32 22V18" stroke="white" stroke-width="3" stroke-linecap="round"/>
-                </svg>
-              </div>
+            <div class="audience-image place-green">
+              <img src="assets/images/agricultores.jpg" alt="Agricultores trabajando en el campo" />
             </div>
             <div class="audience-body">
               <h3>Agricultores</h3>
@@ -266,14 +259,8 @@
           </article>
 
           <article class="audience-card">
-            <div class="audience-image placeholder place-blue">
-              <div class="placeholder-icon">
-                <svg viewBox="0 0 64 64" aria-hidden="true">
-                  <rect x="16" y="22" width="32" height="22" rx="8" fill="none" stroke="white" stroke-width="3"/>
-                  <path d="M28 16L32 22L36 16" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M22 40H42" stroke="white" stroke-width="3" stroke-linecap="round"/>
-                </svg>
-              </div>
+            <div class="audience-image place-blue">
+              <img src="assets/images/operadores.webp" alt="Operador preparando un dron agrícola" />
             </div>
             <div class="audience-body">
               <h3>Operadores</h3>
@@ -281,6 +268,101 @@
             </div>
           </article>
         </div>
+      </section>
+
+      <section class="pricing-section" id="planes">
+        <div class="section-title">
+          <span class="section-eyebrow">Planes para cada operación</span>
+          <h2>Crece a tu ritmo</h2>
+          <p>Elige las herramientas que mejor se adaptan a tu campo.</p>
+        </div>
+
+        <div class="pricing-grid">
+          <article class="pricing-card">
+            <div class="pricing-card-heading">
+              <span class="pricing-label">Para comenzar</span>
+              <h3>Esencial</h3>
+              <p>Todo lo necesario para organizar tus primeras misiones.</p>
+            </div>
+            <p class="plan-price"><span>S/</span> 149 <span class="price-period">/ mes</span></p>
+            <ul class="plan-features">
+              <li>Planificación de hasta 20 misiones</li>
+              <li>Monitoreo de 1 dron</li>
+              <li>Pronóstico del clima</li>
+              <li>Reportes básicos</li>
+            </ul>
+            <a class="plan-button" href="#contacto" data-plan="Esencial">Elegir Esencial</a>
+          </article>
+
+          <article class="pricing-card pricing-card-featured">
+            <span class="popular-badge">Más elegido</span>
+            <div class="pricing-card-heading">
+              <span class="pricing-label">Para crecer</span>
+              <h3>Profesional</h3>
+              <p>Más control y análisis para equipos en expansión.</p>
+            </div>
+            <p class="plan-price"><span>S/</span> 349 <span class="price-period">/ mes</span></p>
+            <ul class="plan-features">
+              <li>Misiones ilimitadas</li>
+              <li>Monitoreo de hasta 5 drones</li>
+              <li>Historial y reportes avanzados</li>
+              <li>Soporte prioritario</li>
+            </ul>
+            <a class="plan-button" href="#contacto" data-plan="Profesional">Elegir Profesional</a>
+          </article>
+
+          <article class="pricing-card">
+            <div class="pricing-card-heading">
+              <span class="pricing-label">Para operaciones grandes</span>
+              <h3>Empresarial</h3>
+              <p>Una solución flexible para operaciones a gran escala.</p>
+            </div>
+            <p class="plan-price"><span>S/</span> 699 <span class="price-period">/ mes</span></p>
+            <ul class="plan-features">
+              <li>Todo lo incluido en Profesional</li>
+              <li>Drones y usuarios ilimitados</li>
+              <li>Panel de control personalizado</li>
+              <li>Acompañamiento dedicado</li>
+            </ul>
+            <a class="plan-button" href="#contacto" data-plan="Empresarial">Elegir Empresarial</a>
+          </article>
+        </div>
+        <p class="pricing-note">Precios referenciales en soles peruanos. Escríbenos para conocer más.</p>
+      </section>
+
+      <section class="contact-section" id="contacto">
+        <div class="contact-copy">
+          <span class="section-eyebrow">Hablemos de tu campo</span>
+          <h2>¿Listo para despegar?</h2>
+          <p>Cuéntanos qué necesitas. Nuestro equipo se pondrá en contacto contigo para ayudarte a encontrar la mejor solución.</p>
+          <a class="contact-email" href="mailto:info@agridron.com">info@agridron.com</a>
+          <a class="contact-phone" href="tel:+51987654321">+51 987 654 321</a>
+        </div>
+        <form class="contact-form" id="contact-form" action="mailto:info@agridron.com" method="post" enctype="text/plain">
+          <div class="form-field">
+            <label for="contact-name">Nombre</label>
+            <input id="contact-name" name="name" type="text" autocomplete="name" placeholder="Tu nombre" required />
+          </div>
+          <div class="form-field">
+            <label for="contact-email">Correo electrónico</label>
+            <input id="contact-email" name="email" type="email" autocomplete="email" placeholder="tu@correo.com" required />
+          </div>
+          <div class="form-field">
+            <label for="contact-plan">Plan de interés</label>
+            <select id="contact-plan" name="plan">
+              <option value="Quiero más información">Quiero más información</option>
+              <option value="Esencial">Esencial</option>
+              <option value="Profesional">Profesional</option>
+              <option value="Empresarial">Empresarial</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="contact-message">¿Cómo podemos ayudarte?</label>
+            <textarea id="contact-message" name="message" rows="4" placeholder="Cuéntanos sobre tu operación" required></textarea>
+          </div>
+          <button class="contact-submit" type="submit">Enviar consulta <span aria-hidden="true">→</span></button>
+          <p class="form-note" id="form-note" aria-live="polite">Se abrirá tu aplicación de correo para enviar el mensaje.</p>
+        </form>
       </section>
 
       <section class="team-section" id="team-section">
@@ -292,7 +374,7 @@
         <div class="team-grid">
           <div class="team-member">
             <div class="member-avatar avatar-1"></div>
-            <div class="member-name">samir choquehuanca</div>
+            <div class="member-name">Samir Choquehuanca</div>
             <div class="member-role">Desarrollador Frontend</div>
           </div>
 
@@ -341,19 +423,21 @@
           <div class="footer-links">
             <h4>Enlaces</h4>
             <ul>
-              <li>Inicio</li>
-              <li>Funcionalidades</li>
-              <li>Cómo Funciona</li>
-              <li>Para Quién</li>
-              <li>Nuestro Equipo</li>
+              <li><a href="#inicio">Inicio</a></li>
+              <li><a href="#features">Funcionalidades</a></li>
+              <li><a href="#how-it-works">Cómo funciona</a></li>
+              <li><a href="#audiences">Para quién</a></li>
+              <li><a href="#planes">Planes</a></li>
+              <li><a href="#contacto">Contacto</a></li>
+              <li><a href="#team-section">Nuestro equipo</a></li>
             </ul>
           </div>
 
           <div class="footer-contact">
             <h4>Contacto</h4>
             <ul>
-              <li>info@agridron.com</li>
-              <li>+51 987 654 321</li>
+              <li><a href="mailto:info@agridron.com">info@agridron.com</a></li>
+              <li><a href="tel:+51999999999">+51 999 999 999</a></li>
               <li>Lima, Perú</li>
             </ul>
           </div>
@@ -365,7 +449,7 @@
           </div>
         </div>
 
-        <div class="copyright">© 2025 AgriDron Solutions. Todos los derechos reservados.</div>
+        <div class="copyright">© 2026 AgriDron Solutions. Todos los derechos reservados.</div>
       </footer>
     </div>
 
