@@ -1,0 +1,173 @@
+window.AgridronTranslations = window.AgridronTranslations || {};
+window.AgridronTranslations.en = {
+  languageName: "English",
+  nav: {
+    primaryLabel: "Main navigation",
+    home: "Home",
+    features: "Features",
+    howItWorks: "How it works",
+    audience: "Who it's for",
+    plans: "Plans",
+    faq: "FAQ",
+    contact: "Contact",
+    team: "Our team",
+    demo: "Request a demo",
+    openMenu: "Open navigation menu",
+    closeMenu: "Close navigation menu",
+  },
+  hero: {
+    title: "Revolutionize crop health with precision automation.",
+    description:
+      "A platform to plan and monitor agricultural spraying operations using drones.",
+    benefits: "Benefits",
+    benefitCosts: "Reduce costs",
+    benefitProductivity: "Increase productivity",
+    benefitSafety: "Protect your team",
+    plansCta: "Explore our plans",
+    howItWorksCta: "See how it works",
+  },
+  features: {
+    title: "Our features",
+    description: "Everything you need for more efficient agricultural spraying.",
+    missionTitle: "Mission planning",
+    missionDescription:
+      "Define spraying areas on an interactive map, schedule missions, and optimize resources.",
+    monitorTitle: "Real-time monitoring",
+    monitorDescription:
+      "Track drone locations, status, and progress throughout each operation.",
+    weatherTitle: "Check weather conditions",
+    weatherDescription:
+      "Check the forecast and choose the right time to carry out your missions.",
+  },
+  steps: {
+    title: "How it works",
+    description: "Take control of your operations in just four steps.",
+    plan: "Plan",
+    planDescription: "Select your field and define the area on the map.",
+    weather: "Check the weather",
+    weatherDescription: "Check current weather conditions.",
+    execute: "Execute",
+    executeDescription: "Monitor the mission in real time.",
+    analyze: "Analyze",
+    analyzeDescription: "Review reports and your operation history.",
+  },
+  audiences: {
+    title: "Who it's for",
+    description: "A solution designed for everyone working in the field.",
+    farmersTitle: "Farmers",
+    farmersDescription:
+      "Manage your farms, fields, and operations from a single platform.",
+    farmersImageAlt: "Farmers working in a field",
+    operatorsTitle: "Operators",
+    operatorsDescription:
+      "Run and monitor missions with accurate, real-time information.",
+    operatorsImageAlt: "Operator preparing an agricultural drone",
+  },
+  plans: {
+    eyebrow: "Plans for every operation",
+    title: "Grow at your own pace",
+    description: "Choose the tools that best fit your operation.",
+    essentialTitle: "Essential",
+    essentialAudience: "Get started",
+    essentialDescription: "Everything you need to organize your first missions.",
+    essentialFeature1: "Plan up to 20 missions",
+    essentialFeature2: "Monitor 1 drone",
+    essentialFeature3: "Weather forecast",
+    essentialFeature4: "Basic reports",
+    essentialButton: "Choose Essential",
+    professionalTitle: "Professional",
+    professionalAudience: "For growing teams",
+    professionalDescription: "More control and insights for expanding teams.",
+    professionalFeature1: "Unlimited missions",
+    professionalFeature2: "Monitor up to 5 drones",
+    professionalFeature3: "History and advanced reports",
+    professionalFeature4: "Priority support",
+    professionalButton: "Choose Professional",
+    enterpriseTitle: "Enterprise",
+    enterpriseAudience: "For large operations",
+    enterpriseDescription: "A flexible solution for large-scale operations.",
+    enterpriseFeature1: "Everything in Professional",
+    enterpriseFeature2: "Unlimited drones and users",
+    enterpriseFeature3: "Custom dashboard",
+    enterpriseFeature4: "Dedicated guidance",
+    enterpriseButton: "Choose Enterprise",
+    popular: "Most popular",
+    perMonth: "/ month",
+    note: "Reference prices in Peruvian soles. Contact us to learn more.",
+  },
+  faq: {
+    eyebrow: "Frequently asked questions",
+    title: "Frequently asked questions",
+    description: "What you need to know before getting started with AgriDron.",
+    cardTitle: "Have another question?",
+    cardDescription: "Write to us and we'll get back to you shortly.",
+    contactButton: "Contact us",
+    listLabel: "Frequently asked questions",
+    questions: [
+      {
+        question: "What is AgriDron Solutions?",
+        answer:
+          "It's a platform for planning and monitoring agricultural spraying operations with drones.",
+      },
+      {
+        question: "How does the platform work?",
+        answer:
+          "Set your field and work area, check weather conditions, run the mission, and review the results.",
+      },
+      {
+        question: "What can I do with the platform?",
+        answer:
+          "Plan missions, monitor drones in real time, check the weather, and review operation reports.",
+      },
+      {
+        question: "Do I need a drone to use AgriDron?",
+        answer:
+          "The platform is designed for farmers and operators. Contact us and we'll help you find the right option for your operation.",
+      },
+      {
+        question: "Can I monitor multiple missions and drones?",
+        answer:
+          "Yes. The number of drones and missions available depends on the plan you choose.",
+      },
+      {
+        question: "How do I choose the right plan?",
+        answer:
+          "Compare the plans and their features. If you need help, send us a message and our team will guide you.",
+      },
+    ],
+  },
+  contact: {
+    eyebrow: "Let's talk about your operation",
+    title: "Ready for takeoff?",
+    description:
+      "Tell us what you need. Our team will get in touch to help you find the right solution.",
+    nameLabel: "Name",
+    namePlaceholder: "Your name",
+    emailLabel: "Email address",
+    emailPlaceholder: "you@example.com",
+    planLabel: "Plan of interest",
+    planInfo: "I'd like more information",
+    messageLabel: "How can we help?",
+    messagePlaceholder: "Tell us about your operation",
+    submit: "Send inquiry",
+    formNote: "Your email app will open so you can send your message.",
+    sendingNote: "Opening your email app to complete your message.",
+    emailSubject: "AgriDron inquiry",
+    emailName: "Name",
+    emailAddress: "Email",
+    emailPlan: "Plan of interest",
+    emailMessage: "Message",
+  },
+  team: {
+    title: "Our team",
+    description: "A team of professionals passionate about technology and agriculture.",
+    frontend: "Frontend Developer",
+    backend: "Backend Developer",
+    designer: "UX/UI Designer",
+    productOwner: "Product Owner",
+  },
+  footer: {
+    links: "Links",
+    copyright: "© 2026 AgriDron Solutions. All rights reserved.",
+  },
+};

@@ -43,67 +43,72 @@
         </button>
 
         <div class="nav-collapse" id="nav-collapse">
-          <nav class="main-nav" aria-label="Navegación principal">
-            <a href="#inicio">Inicio</a>
-            <a href="#features">Funcionalidades</a>
-            <a href="#how-it-works">Cómo Funciona</a>
-            <a href="#audiences">Para Quién</a>
-            <a href="#planes">Planes</a>
-            <a href="#contacto">Contacto</a>
-            <a href="#team-section">Nuestro Equipo</a>
+          <nav class="main-nav" aria-label="Navegación principal" data-i18n-aria-label="nav.primaryLabel">
+            <a href="#inicio" data-i18n="nav.home">Inicio</a>
+            <a href="#features" data-i18n="nav.features">Funcionalidades</a>
+            <a href="#how-it-works" data-i18n="nav.howItWorks">Cómo Funciona</a>
+            <a href="#audiences" data-i18n="nav.audience">Para Quién</a>
+            <a href="#planes" data-i18n="nav.plans">Planes</a>
+            <a href="#faq" data-i18n="nav.faq">Preguntas frecuentes</a>
+            <a href="#contacto" data-i18n="nav.contact">Contacto</a>
+            <a href="#team-section" data-i18n="nav.team">Nuestro Equipo</a>
           </nav>
 
-          <a href="#contacto" class="demo-button">Solicitar Demo</a>
+          <div class="language-switch" role="group" aria-label="Language / Idioma">
+            <button type="button" data-language="es" aria-pressed="true">ES</button>
+            <button type="button" data-language="en" aria-pressed="false">EN</button>
+          </div>
+          <a href="#contacto" class="demo-button" data-i18n="nav.demo">Solicitar Demo</a>
         </div>
       </header>
 
       <main class="hero">
         <div class="hero-copy">
-          <h1>
+          <h1 data-i18n="hero.title">
             Revoluciona la salud de tus cultivos con precisión automatizada.
           </h1>
 
-          <p>
+          <p data-i18n="hero.description">
             Plataforma para la planificación y monitoreo de operaciones de fumigación agrícola mediante drones.
           </p>
 
-          <div class="benefits" aria-label="Beneficios">
+          <div class="benefits" aria-label="Beneficios" data-i18n-aria-label="hero.benefits">
             <div class="benefit-item">
               <span class="icon cost-icon" aria-hidden="true">
-                <svg viewBox="0 0 32 32" role="img" aria-label="Reduce costos">
+                <svg viewBox="0 0 32 32" role="img" aria-label="Reduce costos" data-i18n-aria-label="hero.benefitCosts">
                   <path d="M16 7.5v11.8" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
                   <path d="M11.5 19l4.5 4.5 4.5-4.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
                   <path d="M9.5 12.5c0-2.9 2.8-5.2 6.5-5.2s6.5 2.3 6.5 5.2-2.8 5.2-6.5 5.2c-3.7 0-6.5-2.3-6.5-5.2Z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
               </span>
-              <span>Reduce costos</span>
+              <span data-i18n="hero.benefitCosts">Reduce costos</span>
             </div>
             <div class="benefit-item">
               <span class="icon productivity-icon" aria-hidden="true">
-                <svg viewBox="0 0 32 32" role="img" aria-label="Aumenta tu productividad">
+                <svg viewBox="0 0 32 32" role="img" aria-label="Aumenta tu productividad" data-i18n-aria-label="hero.benefitProductivity">
                   <path d="M7 23.5h18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
                   <path d="M9.5 18.5 14 14l4 4.5 6.5-8.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
                   <path d="M20.5 10h5v5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
               </span>
-              <span>Aumenta tu productividad</span>
+              <span data-i18n="hero.benefitProductivity">Aumenta tu productividad</span>
             </div>
             <div class="benefit-item">
               <span class="icon shield-icon" aria-hidden="true">
-                <svg viewBox="0 0 32 32" role="img" aria-label="Protege a tu equipo">
+                <svg viewBox="0 0 32 32" role="img" aria-label="Protege a tu equipo" data-i18n-aria-label="hero.benefitSafety">
                   <path d="M16 5.5 24 8.7v7.1c0 5.1-3.3 9.7-8 12.4-4.7-2.7-8-7.3-8-12.4V8.7l8-3.2Z" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linejoin="round"/>
                   <path d="M12.2 16.3 15 19.2l4.8-5.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
               </span>
-              <span>Protege a tu equipo</span>
+              <span data-i18n="hero.benefitSafety">Protege a tu equipo</span>
             </div>
           </div>
 
           <div class="cta-row">
-            <a class="primary-cta" href="#planes">Conoce nuestros planes <span>→</span></a>
+            <a class="primary-cta" href="#planes"><span data-i18n="hero.plansCta">Conoce nuestros planes</span> <span>→</span></a>
             <a class="secondary-cta" href="#how-it-works">
               <span class="play-icon"></span>
-              Ver cómo funciona
+              <span data-i18n="hero.howItWorksCta">Ver cómo funciona</span>
             </a>
           </div>
         </div>
@@ -117,8 +122,8 @@
 
       <section class="features" id="features">
         <div class="features-header">
-          <h2>Nuestras funcionalidades</h2>
-          <p>Todo lo que necesitas para una fumigación agrícola más eficiente.</p>
+          <h2 data-i18n="features.title">Nuestras funcionalidades</h2>
+          <p data-i18n="features.description">Todo lo que necesitas para una fumigación agrícola más eficiente.</p>
         </div>
 
         <div class="feature-grid">
@@ -131,10 +136,11 @@
                 <path d="M38 42l4 4 7-8" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
             </div>
-            <h3>Planificación de misiones</h3>
+            <h3 data-i18n="features.missionTitle">Planificación de misiones</h3>
             <p>
-              Define áreas de fumigación en un mapa interactivo, programa tus misiones
+              <span data-i18n="features.missionDescription">Define áreas de fumigación en un mapa interactivo, programa tus misiones
               y optimiza recursos.
+              </span>
             </p>
             <div class="feature-arrow">→</div>
           </article>
@@ -149,10 +155,9 @@
                 <path d="M32 32L41 23" fill="none" stroke="white" stroke-width="3" stroke-linecap="round"/>
               </svg>
             </div>
-            <h3>Monitoreo en tiempo real</h3>
+            <h3 data-i18n="features.monitorTitle">Monitoreo en tiempo real</h3>
             <p>
-              Visualiza la ubicación, estado y progreso de los drones durante la
-              operación.
+              <span data-i18n="features.monitorDescription">Visualiza la ubicación, estado y progreso de los drones durante la operación.</span>
             </p>
             <div class="feature-arrow">→</div>
           </article>
@@ -167,9 +172,9 @@
                 <path d="M32 22v9" fill="none" stroke="white" stroke-width="3" stroke-linecap="round"/>
               </svg>
             </div>
-            <h3>Consulta las condiciones climáticas</h3>
+            <h3 data-i18n="features.weatherTitle">Consulta las condiciones climáticas</h3>
             <p>
-              Consulta el pronóstico del clima y determina el momento adecuado para realizar tus misiones.
+              <span data-i18n="features.weatherDescription">Consulta el pronóstico del clima y determina el momento adecuado para realizar tus misiones.</span>
             </p>
             <div class="feature-arrow">→</div>
           </article>
@@ -178,8 +183,8 @@
 
       <section class="how-it-works" id="how-it-works">
         <div class="section-title simple">
-          <h2>Cómo funciona</h2>
-          <p>En solo 4 pasos, lleva el control de tus operaciones.</p>
+          <h2 data-i18n="steps.title">Cómo funciona</h2>
+          <p data-i18n="steps.description">En solo 4 pasos, lleva el control de tus operaciones.</p>
         </div>
 
         <div class="steps-row">
@@ -191,8 +196,8 @@
                 <circle cx="32" cy="26" r="5" fill="none" stroke="white" stroke-width="3"/>
               </svg>
             </div>
-            <h3>Planifica</h3>
-            <p>Selecciona tu parcela<br />y define el área en el mapa.</p>
+            <h3 data-i18n="steps.plan">Planifica</h3>
+            <p data-i18n="steps.planDescription">Selecciona tu parcela y define el área en el mapa.</p>
           </div>
 
           <div class="step-arrow">→</div>
@@ -207,8 +212,8 @@
                 </g>
               </svg>
             </div>
-            <h3>Consulta el clima</h3>
-            <p>Verifica las condiciones<br />meteorológicas.</p>
+            <h3 data-i18n="steps.weather">Consulta el clima</h3>
+            <p data-i18n="steps.weatherDescription">Verifica las condiciones meteorológicas.</p>
           </div>
 
           <div class="step-arrow">→</div>
@@ -221,8 +226,8 @@
                 <path d="M26 18V12h12v6M24 34h16M24 40h16M24 46h10" fill="none" stroke="white" stroke-width="3" stroke-linecap="round"/>
               </svg>
             </div>
-            <h3>Ejecuta</h3>
-            <p>Monitorea la misión<br />en tiempo real.</p>
+            <h3 data-i18n="steps.execute">Ejecuta</h3>
+            <p data-i18n="steps.executeDescription">Monitorea la misión en tiempo real.</p>
           </div>
 
           <div class="step-arrow">→</div>
@@ -235,36 +240,36 @@
                 <circle cx="32" cy="32" r="20" fill="none" stroke="white" stroke-width="3" opacity="0.8"/>
               </svg>
             </div>
-            <h3>Analiza</h3>
-            <p>Revisa reportes e historial<br />de tus operaciones.</p>
+            <h3 data-i18n="steps.analyze">Analiza</h3>
+            <p data-i18n="steps.analyzeDescription">Revisa reportes e historial de tus operaciones.</p>
           </div>
         </div>
       </section>
 
       <section class="audiences" id="audiences">
         <div class="section-title simple">
-          <h2>Para quién</h2>
-          <p>Una solución diseñada para cada actor del campo.</p>
+          <h2 data-i18n="audiences.title">Para quién</h2>
+          <p data-i18n="audiences.description">Una solución diseñada para cada actor del campo.</p>
         </div>
 
         <div class="audience-grid">
           <article class="audience-card">
             <div class="audience-image place-green">
-              <img src="assets/images/agricultores.jpg" alt="Agricultores trabajando en el campo" />
+              <img src="assets/images/agricultores.jpg" alt="Agricultores trabajando en el campo" data-i18n-alt="audiences.farmersImageAlt" />
             </div>
             <div class="audience-body">
-              <h3>Agricultores</h3>
-              <p>Gestiona tus fincas, parcelas y operaciones desde una sola plataforma.</p>
+              <h3 data-i18n="audiences.farmersTitle">Agricultores</h3>
+              <p data-i18n="audiences.farmersDescription">Gestiona tus fincas, parcelas y operaciones desde una sola plataforma.</p>
             </div>
           </article>
 
           <article class="audience-card">
             <div class="audience-image place-blue">
-              <img src="assets/images/operadores.webp" alt="Operador preparando un dron agrícola" />
+              <img src="assets/images/operadores.webp" alt="Operador preparando un dron agrícola" data-i18n-alt="audiences.operatorsImageAlt" />
             </div>
             <div class="audience-body">
-              <h3>Operadores</h3>
-              <p>Ejecuta y monitorea las misiones con información precisa y en tiempo real.</p>
+              <h3 data-i18n="audiences.operatorsTitle">Operadores</h3>
+              <p data-i18n="audiences.operatorsDescription">Ejecuta y monitorea las misiones con información precisa y en tiempo real.</p>
             </div>
           </article>
         </div>
@@ -272,134 +277,151 @@
 
       <section class="pricing-section" id="planes">
         <div class="section-title">
-          <span class="section-eyebrow">Planes para cada operación</span>
-          <h2>Crece a tu ritmo</h2>
-          <p>Elige las herramientas que mejor se adaptan a tu campo.</p>
+          <span class="section-eyebrow" data-i18n="plans.eyebrow">Planes para cada operación</span>
+          <h2 data-i18n="plans.title">Crece a tu ritmo</h2>
+          <p data-i18n="plans.description">Elige las herramientas que mejor se adaptan a tu campo.</p>
         </div>
 
         <div class="pricing-grid">
           <article class="pricing-card">
             <div class="pricing-card-heading">
-              <span class="pricing-label">Para comenzar</span>
-              <h3>Esencial</h3>
-              <p>Todo lo necesario para organizar tus primeras misiones.</p>
+              <span class="pricing-label" data-i18n="plans.essentialAudience">Para comenzar</span>
+              <h3 data-i18n="plans.essentialTitle">Esencial</h3>
+              <p data-i18n="plans.essentialDescription">Todo lo necesario para organizar tus primeras misiones.</p>
             </div>
-            <p class="plan-price"><span>S/</span> 149 <span class="price-period">/ mes</span></p>
+            <p class="plan-price"><span>S/</span> 149 <span class="price-period" data-i18n="plans.perMonth">/ mes</span></p>
             <ul class="plan-features">
-              <li>Planificación de hasta 20 misiones</li>
-              <li>Monitoreo de 1 dron</li>
-              <li>Pronóstico del clima</li>
-              <li>Reportes básicos</li>
+              <li data-i18n="plans.essentialFeature1">Planificación de hasta 20 misiones</li>
+              <li data-i18n="plans.essentialFeature2">Monitoreo de 1 dron</li>
+              <li data-i18n="plans.essentialFeature3">Pronóstico del clima</li>
+              <li data-i18n="plans.essentialFeature4">Reportes básicos</li>
             </ul>
-            <a class="plan-button" href="#contacto" data-plan="Esencial">Elegir Esencial</a>
+            <a class="plan-button" href="#contacto" data-plan="Esencial" data-i18n="plans.essentialButton">Elegir Esencial</a>
           </article>
 
           <article class="pricing-card pricing-card-featured">
-            <span class="popular-badge">Más elegido</span>
+            <span class="popular-badge" data-i18n="plans.popular">Más elegido</span>
             <div class="pricing-card-heading">
-              <span class="pricing-label">Para crecer</span>
-              <h3>Profesional</h3>
-              <p>Más control y análisis para equipos en expansión.</p>
+              <span class="pricing-label" data-i18n="plans.professionalAudience">Para crecer</span>
+              <h3 data-i18n="plans.professionalTitle">Profesional</h3>
+              <p data-i18n="plans.professionalDescription">Más control y análisis para equipos en expansión.</p>
             </div>
-            <p class="plan-price"><span>S/</span> 349 <span class="price-period">/ mes</span></p>
+            <p class="plan-price"><span>S/</span> 349 <span class="price-period" data-i18n="plans.perMonth">/ mes</span></p>
             <ul class="plan-features">
-              <li>Misiones ilimitadas</li>
-              <li>Monitoreo de hasta 5 drones</li>
-              <li>Historial y reportes avanzados</li>
-              <li>Soporte prioritario</li>
+              <li data-i18n="plans.professionalFeature1">Misiones ilimitadas</li>
+              <li data-i18n="plans.professionalFeature2">Monitoreo de hasta 5 drones</li>
+              <li data-i18n="plans.professionalFeature3">Historial y reportes avanzados</li>
+              <li data-i18n="plans.professionalFeature4">Soporte prioritario</li>
             </ul>
-            <a class="plan-button" href="#contacto" data-plan="Profesional">Elegir Profesional</a>
+            <a class="plan-button" href="#contacto" data-plan="Profesional" data-i18n="plans.professionalButton">Elegir Profesional</a>
           </article>
 
           <article class="pricing-card">
             <div class="pricing-card-heading">
-              <span class="pricing-label">Para operaciones grandes</span>
-              <h3>Empresarial</h3>
-              <p>Una solución flexible para operaciones a gran escala.</p>
+              <span class="pricing-label" data-i18n="plans.enterpriseAudience">Para operaciones grandes</span>
+              <h3 data-i18n="plans.enterpriseTitle">Empresarial</h3>
+              <p data-i18n="plans.enterpriseDescription">Una solución flexible para operaciones a gran escala.</p>
             </div>
-            <p class="plan-price"><span>S/</span> 699 <span class="price-period">/ mes</span></p>
+            <p class="plan-price"><span>S/</span> 699 <span class="price-period" data-i18n="plans.perMonth">/ mes</span></p>
             <ul class="plan-features">
-              <li>Todo lo incluido en Profesional</li>
-              <li>Drones y usuarios ilimitados</li>
-              <li>Panel de control personalizado</li>
-              <li>Acompañamiento dedicado</li>
+              <li data-i18n="plans.enterpriseFeature1">Todo lo incluido en Profesional</li>
+              <li data-i18n="plans.enterpriseFeature2">Drones y usuarios ilimitados</li>
+              <li data-i18n="plans.enterpriseFeature3">Panel de control personalizado</li>
+              <li data-i18n="plans.enterpriseFeature4">Acompañamiento dedicado</li>
             </ul>
-            <a class="plan-button" href="#contacto" data-plan="Empresarial">Elegir Empresarial</a>
+            <a class="plan-button" href="#contacto" data-plan="Empresarial" data-i18n="plans.enterpriseButton">Elegir Empresarial</a>
           </article>
         </div>
-        <p class="pricing-note">Precios referenciales en soles peruanos. Escríbenos para conocer más.</p>
+        <p class="pricing-note" data-i18n="plans.note">Precios referenciales en soles peruanos. Escríbenos para conocer más.</p>
+      </section>
+
+      <section class="faq-section" id="faq">
+        <div class="faq-intro">
+          <span class="section-eyebrow" data-i18n="faq.eyebrow">Preguntas frecuentes</span>
+          <h2 data-i18n="faq.title">Preguntas frecuentes</h2>
+          <p data-i18n="faq.description">Lo esencial antes de empezar con AgriDron.</p>
+          <div class="faq-contact-card">
+            <h3 data-i18n="faq.cardTitle">¿Tienes otra pregunta?</h3>
+            <p data-i18n="faq.cardDescription">Escríbenos y te responderemos a la brevedad.</p>
+            <a href="#contacto" class="faq-contact-button">
+              <span data-i18n="faq.contactButton">Escríbenos</span>
+              <span aria-hidden="true">→</span>
+            </a>
+          </div>
+        </div>
+        <div class="faq-list" id="faq-list" aria-label="Preguntas frecuentes" data-i18n-aria-label="faq.listLabel"></div>
       </section>
 
       <section class="contact-section" id="contacto">
         <div class="contact-copy">
-          <span class="section-eyebrow">Hablemos de tu campo</span>
-          <h2>¿Listo para despegar?</h2>
-          <p>Cuéntanos qué necesitas. Nuestro equipo se pondrá en contacto contigo para ayudarte a encontrar la mejor solución.</p>
+          <span class="section-eyebrow" data-i18n="contact.eyebrow">Hablemos de tu campo</span>
+          <h2 data-i18n="contact.title">¿Listo para despegar?</h2>
+          <p data-i18n="contact.description">Cuéntanos qué necesitas. Nuestro equipo se pondrá en contacto contigo para ayudarte a encontrar la mejor solución.</p>
           <a class="contact-email" href="mailto:info@agridron.com">info@agridron.com</a>
           <a class="contact-phone" href="tel:+51987654321">+51 987 654 321</a>
         </div>
         <form class="contact-form" id="contact-form" action="mailto:info@agridron.com" method="post" enctype="text/plain">
           <div class="form-field">
-            <label for="contact-name">Nombre</label>
-            <input id="contact-name" name="name" type="text" autocomplete="name" placeholder="Tu nombre" required />
+            <label for="contact-name" data-i18n="contact.nameLabel">Nombre</label>
+            <input id="contact-name" name="name" type="text" autocomplete="name" placeholder="Tu nombre" data-i18n-placeholder="contact.namePlaceholder" required />
           </div>
           <div class="form-field">
-            <label for="contact-email">Correo electrónico</label>
-            <input id="contact-email" name="email" type="email" autocomplete="email" placeholder="tu@correo.com" required />
+            <label for="contact-email" data-i18n="contact.emailLabel">Correo electrónico</label>
+            <input id="contact-email" name="email" type="email" autocomplete="email" placeholder="tu@correo.com" data-i18n-placeholder="contact.emailPlaceholder" required />
           </div>
           <div class="form-field">
-            <label for="contact-plan">Plan de interés</label>
+            <label for="contact-plan" data-i18n="contact.planLabel">Plan de interés</label>
             <select id="contact-plan" name="plan">
-              <option value="Quiero más información">Quiero más información</option>
-              <option value="Esencial">Esencial</option>
-              <option value="Profesional">Profesional</option>
-              <option value="Empresarial">Empresarial</option>
+              <option value="Quiero más información" data-i18n="contact.planInfo">Quiero más información</option>
+              <option value="Esencial" data-i18n="plans.essentialTitle">Esencial</option>
+              <option value="Profesional" data-i18n="plans.professionalTitle">Profesional</option>
+              <option value="Empresarial" data-i18n="plans.enterpriseTitle">Empresarial</option>
             </select>
           </div>
           <div class="form-field">
-            <label for="contact-message">¿Cómo podemos ayudarte?</label>
-            <textarea id="contact-message" name="message" rows="4" placeholder="Cuéntanos sobre tu operación" required></textarea>
+            <label for="contact-message" data-i18n="contact.messageLabel">¿Cómo podemos ayudarte?</label>
+            <textarea id="contact-message" name="message" rows="4" placeholder="Cuéntanos sobre tu operación" data-i18n-placeholder="contact.messagePlaceholder" required></textarea>
           </div>
-          <button class="contact-submit" type="submit">Enviar consulta <span aria-hidden="true">→</span></button>
-          <p class="form-note" id="form-note" aria-live="polite">Se abrirá tu aplicación de correo para enviar el mensaje.</p>
+          <button class="contact-submit" type="submit"><span data-i18n="contact.submit">Enviar consulta</span> <span aria-hidden="true">→</span></button>
+          <p class="form-note" id="form-note" aria-live="polite" data-i18n="contact.formNote">Se abrirá tu aplicación de correo para enviar el mensaje.</p>
         </form>
       </section>
 
       <section class="team-section" id="team-section">
         <div class="team-header">
-          <h2>Nuestro equipo</h2>
-          <p>Un grupo de profesionales apasionados por la tecnología y el campo.</p>
+          <h2 data-i18n="team.title">Nuestro equipo</h2>
+          <p data-i18n="team.description">Un grupo de profesionales apasionados por la tecnología y el campo.</p>
         </div>
 
         <div class="team-grid">
           <div class="team-member">
             <div class="member-avatar avatar-1"></div>
             <div class="member-name">Samir Choquehuanca</div>
-            <div class="member-role">Desarrollador Frontend</div>
+            <div class="member-role" data-i18n="team.frontend">Desarrollador Frontend</div>
           </div>
 
           <div class="team-member">
             <div class="member-avatar avatar-2"></div>
             <div class="member-name">Edwin Nicho</div>
-            <div class="member-role">Desarrollador Backend</div>
+            <div class="member-role" data-i18n="team.backend">Desarrollador Backend</div>
           </div>
 
           <div class="team-member">
             <div class="member-avatar avatar-3"></div>
             <div class="member-name">Miguel Jara</div>
-            <div class="member-role">UX/UI Designer</div>
+            <div class="member-role" data-i18n="team.designer">UX/UI Designer</div>
           </div>
 
           <div class="team-member">
             <div class="member-avatar avatar-3"></div>
             <div class="member-name">Galindo, Italo</div>
-            <div class="member-role">UX/UI Designer</div>
+            <div class="member-role" data-i18n="team.designer">UX/UI Designer</div>
           </div>
 
           <div class="team-member">
             <div class="member-avatar avatar-4"></div>
             <div class="member-name">Alexander Vasquez</div>
-            <div class="member-role">Product Owner</div>
+            <div class="member-role" data-i18n="team.productOwner">Product Owner</div>
           </div>
         </div>
       </section>
@@ -421,20 +443,21 @@
           </div>
 
           <div class="footer-links">
-            <h4>Enlaces</h4>
+            <h4 data-i18n="footer.links">Enlaces</h4>
             <ul>
-              <li><a href="#inicio">Inicio</a></li>
-              <li><a href="#features">Funcionalidades</a></li>
-              <li><a href="#how-it-works">Cómo funciona</a></li>
-              <li><a href="#audiences">Para quién</a></li>
-              <li><a href="#planes">Planes</a></li>
-              <li><a href="#contacto">Contacto</a></li>
-              <li><a href="#team-section">Nuestro equipo</a></li>
+              <li><a href="#inicio" data-i18n="nav.home">Inicio</a></li>
+              <li><a href="#features" data-i18n="nav.features">Funcionalidades</a></li>
+              <li><a href="#how-it-works" data-i18n="nav.howItWorks">Cómo funciona</a></li>
+              <li><a href="#audiences" data-i18n="nav.audience">Para quién</a></li>
+              <li><a href="#planes" data-i18n="nav.plans">Planes</a></li>
+              <li><a href="#faq" data-i18n="nav.faq">Preguntas frecuentes</a></li>
+              <li><a href="#contacto" data-i18n="nav.contact">Contacto</a></li>
+              <li><a href="#team-section" data-i18n="nav.team">Nuestro equipo</a></li>
             </ul>
           </div>
 
           <div class="footer-contact">
-            <h4>Contacto</h4>
+            <h4 data-i18n="nav.contact">Contacto</h4>
             <ul>
               <li><a href="mailto:info@agridron.com">info@agridron.com</a></li>
               <li><a href="tel:+51999999999">+51 999 999 999</a></li>
@@ -449,10 +472,12 @@
           </div>
         </div>
 
-        <div class="copyright">© 2026 AgriDron Solutions. Todos los derechos reservados.</div>
+        <div class="copyright" data-i18n="footer.copyright">© 2026 AgriDron Solutions. Todos los derechos reservados.</div>
       </footer>
     </div>
 
+    <script src="assets/scripts/i18n/es.js"></script>
+    <script src="assets/scripts/i18n/en.js"></script>
     <script src="assets/scripts/scriptMenu.js"></script>
   </body>
 </html>
