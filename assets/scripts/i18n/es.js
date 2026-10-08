@@ -1,0 +1,173 @@
+window.AgridronTranslations = window.AgridronTranslations || {};
+window.AgridronTranslations.es = {
+  languageName: "Español",
+  nav: {
+    primaryLabel: "Navegación principal",
+    home: "Inicio",
+    features: "Funcionalidades",
+    howItWorks: "Cómo funciona",
+    audience: "Para quién",
+    plans: "Planes",
+    faq: "Preguntas frecuentes",
+    contact: "Contacto",
+    team: "Nuestro equipo",
+    demo: "Solicitar demo",
+    openMenu: "Abrir menú de navegación",
+    closeMenu: "Cerrar menú de navegación",
+  },
+  hero: {
+    title: "Revoluciona la salud de tus cultivos con precisión automatizada.",
+    description:
+      "Plataforma para la planificación y monitoreo de operaciones de fumigación agrícola mediante drones.",
+    benefits: "Beneficios",
+    benefitCosts: "Reduce costos",
+    benefitProductivity: "Aumenta tu productividad",
+    benefitSafety: "Protege a tu equipo",
+    plansCta: "Conoce nuestros planes",
+    howItWorksCta: "Ver cómo funciona",
+  },
+  features: {
+    title: "Nuestras funcionalidades",
+    description: "Todo lo que necesitas para una fumigación agrícola más eficiente.",
+    missionTitle: "Planificación de misiones",
+    missionDescription:
+      "Define áreas de fumigación en un mapa interactivo, programa tus misiones y optimiza recursos.",
+    monitorTitle: "Monitoreo en tiempo real",
+    monitorDescription:
+      "Visualiza la ubicación, estado y progreso de los drones durante la operación.",
+    weatherTitle: "Consulta las condiciones climáticas",
+    weatherDescription:
+      "Consulta el pronóstico del clima y determina el momento adecuado para realizar tus misiones.",
+  },
+  steps: {
+    title: "Cómo funciona",
+    description: "En solo 4 pasos, lleva el control de tus operaciones.",
+    plan: "Planifica",
+    planDescription: "Selecciona tu parcela y define el área en el mapa.",
+    weather: "Consulta el clima",
+    weatherDescription: "Verifica las condiciones meteorológicas.",
+    execute: "Ejecuta",
+    executeDescription: "Monitorea la misión en tiempo real.",
+    analyze: "Analiza",
+    analyzeDescription: "Revisa reportes e historial de tus operaciones.",
+  },
+  audiences: {
+    title: "Para quién",
+    description: "Una solución diseñada para cada actor del campo.",
+    farmersTitle: "Agricultores",
+    farmersDescription:
+      "Gestiona tus fincas, parcelas y operaciones desde una sola plataforma.",
+    farmersImageAlt: "Agricultores trabajando en el campo",
+    operatorsTitle: "Operadores",
+    operatorsDescription:
+      "Ejecuta y monitorea las misiones con información precisa y en tiempo real.",
+    operatorsImageAlt: "Operador preparando un dron agrícola",
+  },
+  plans: {
+    eyebrow: "Planes para cada operación",
+    title: "Crece a tu ritmo",
+    description: "Elige las herramientas que mejor se adaptan a tu campo.",
+    essentialTitle: "Esencial",
+    essentialAudience: "Para comenzar",
+    essentialDescription: "Todo lo necesario para organizar tus primeras misiones.",
+    essentialFeature1: "Planificación de hasta 20 misiones",
+    essentialFeature2: "Monitoreo de 1 dron",
+    essentialFeature3: "Pronóstico del clima",
+    essentialFeature4: "Reportes básicos",
+    essentialButton: "Elegir Esencial",
+    professionalTitle: "Profesional",
+    professionalAudience: "Para crecer",
+    professionalDescription: "Más control y análisis para equipos en expansión.",
+    professionalFeature1: "Misiones ilimitadas",
+    professionalFeature2: "Monitoreo de hasta 5 drones",
+    professionalFeature3: "Historial y reportes avanzados",
+    professionalFeature4: "Soporte prioritario",
+    professionalButton: "Elegir Profesional",
+    enterpriseTitle: "Empresarial",
+    enterpriseAudience: "Para operaciones grandes",
+    enterpriseDescription: "Una solución flexible para operaciones a gran escala.",
+    enterpriseFeature1: "Todo lo incluido en Profesional",
+    enterpriseFeature2: "Drones y usuarios ilimitados",
+    enterpriseFeature3: "Panel de control personalizado",
+    enterpriseFeature4: "Acompañamiento dedicado",
+    enterpriseButton: "Elegir Empresarial",
+    popular: "Más elegido",
+    perMonth: "/ mes",
+    note: "Precios referenciales en soles peruanos. Escríbenos para conocer más.",
+  },
+  faq: {
+    eyebrow: "Preguntas frecuentes",
+    title: "Preguntas frecuentes",
+    description: "Lo esencial antes de empezar con AgriDron.",
+    cardTitle: "¿Tienes otra pregunta?",
+    cardDescription: "Escríbenos y te responderemos a la brevedad.",
+    contactButton: "Escríbenos",
+    listLabel: "Preguntas frecuentes",
+    questions: [
+      {
+        question: "¿Qué es AgriDron Solutions?",
+        answer:
+          "Es una plataforma para planificar y monitorear operaciones de fumigación agrícola con drones.",
+      },
+      {
+        question: "¿Cómo funciona la plataforma?",
+        answer:
+          "Define tu parcela y el área de trabajo, consulta las condiciones del clima, ejecuta la misión y revisa los resultados.",
+      },
+      {
+        question: "¿Qué puedo hacer desde la plataforma?",
+        answer:
+          "Puedes planificar misiones, monitorear drones en tiempo real, consultar el clima y revisar reportes de operación.",
+      },
+      {
+        question: "¿Necesito tener un dron para usar AgriDron?",
+        answer:
+          "La plataforma está diseñada para agricultores y operadores. Contáctanos y te ayudaremos a encontrar la opción adecuada para tu operación.",
+      },
+      {
+        question: "¿Puedo monitorear varias misiones y drones?",
+        answer:
+          "Sí. La cantidad de drones y misiones disponibles depende del plan que elijas.",
+      },
+      {
+        question: "¿Cómo elijo el plan adecuado?",
+        answer:
+          "Compara los planes y sus funciones. Si necesitas ayuda, envíanos una consulta y nuestro equipo te orientará.",
+      },
+    ],
+  },
+  contact: {
+    eyebrow: "Hablemos de tu campo",
+    title: "¿Listo para despegar?",
+    description:
+      "Cuéntanos qué necesitas. Nuestro equipo se pondrá en contacto contigo para ayudarte a encontrar la mejor solución.",
+    nameLabel: "Nombre",
+    namePlaceholder: "Tu nombre",
+    emailLabel: "Correo electrónico",
+    emailPlaceholder: "tu@correo.com",
+    planLabel: "Plan de interés",
+    planInfo: "Quiero más información",
+    messageLabel: "¿Cómo podemos ayudarte?",
+    messagePlaceholder: "Cuéntanos sobre tu operación",
+    submit: "Enviar consulta",
+    formNote: "Se abrirá tu aplicación de correo para enviar el mensaje.",
+    sendingNote: "Abriendo tu aplicación de correo para completar el envío.",
+    emailSubject: "Consulta AgriDron",
+    emailName: "Nombre",
+    emailAddress: "Correo",
+    emailPlan: "Plan de interés",
+    emailMessage: "Mensaje",
+  },
+  team: {
+    title: "Nuestro equipo",
+    description: "Un grupo de profesionales apasionados por la tecnología y el campo.",
+    frontend: "Desarrollador Frontend",
+    backend: "Desarrollador Backend",
+    designer: "Diseñador UX/UI",
+    productOwner: "Product Owner",
+  },
+  footer: {
+    links: "Enlaces",
+    copyright: "© 2026 AgriDron Solutions. Todos los derechos reservados.",
+  },
+};
