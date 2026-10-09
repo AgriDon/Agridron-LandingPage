@@ -152,6 +152,70 @@
     });
   });
 
+  // Showcase Tabs handling
+  const showcaseTabs = document.querySelectorAll(".showcase-tab");
+  const showcasePanels = document.querySelectorAll(".showcase-panel");
+  showcaseTabs.forEach((tab) => {
+    tab.addEventListener("click", () => {
+      const targetId = tab.getAttribute("data-target");
+      showcaseTabs.forEach((t) => {
+        t.classList.remove("active");
+        t.setAttribute("aria-selected", "false");
+      });
+      showcasePanels.forEach((p) => {
+        p.classList.remove("active");
+      });
+
+      tab.classList.add("active");
+      tab.setAttribute("aria-selected", "true");
+      const targetPanel = document.getElementById(targetId);
+      if (targetPanel) {
+        targetPanel.classList.add("active");
+      }
+    });
+  });
+
+  // Video play button handling
+  const playVideoBtn = document.getElementById("play-video-btn");
+  const videoModal = document.getElementById("video-modal");
+  const closeVideoBtn = document.getElementById("close-video-btn");
+  const videoIframe = document.getElementById("video-iframe");
+
+  if (playVideoBtn && videoModal) {
+    playVideoBtn.addEventListener("click", () => {
+      videoModal.classList.add("is-visible");
+      videoModal.setAttribute("aria-hidden", "false");
+      if (videoIframe && !videoIframe.src) {
+        videoIframe.src = "https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ?autoplay=1";
+      }
+    });
+
+    function closeVideo() {
+      videoModal.classList.remove("is-visible");
+      videoModal.setAttribute("aria-hidden", "true");
+      if (videoIframe) {
+        const curSrc = videoIframe.src;
+        videoIframe.src = "";
+      }
+    }
+
+    if (closeVideoBtn) {
+      closeVideoBtn.addEventListener("click", closeVideo);
+    }
+
+    videoModal.addEventListener("click", (e) => {
+      if (e.target === videoModal || e.target.classList.contains("video-backdrop")) {
+        closeVideo();
+      }
+    });
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && videoModal.classList.contains("is-visible")) {
+        closeVideo();
+      }
+    });
+  }
+
   if (contactForm && formNote) {
     contactForm.addEventListener("submit", (event) => {
       event.preventDefault();

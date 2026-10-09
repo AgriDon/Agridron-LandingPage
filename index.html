@@ -3,7 +3,42 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AgiDron Solutions</title>
+    <title>AgriDron Solutions - Agricultura de Precisión con Drones | Smart Farming</title>
+    <meta
+      name="description"
+      content="AgriDron Solutions ofrece fumigación autónoma con drones, monitoreo en tiempo real y reportes inteligentes para agricultores. Reduce costos y optimiza tus cosechas."
+    />
+    <meta
+      name="keywords"
+      content="fumigación con drones, agricultura de precisión, monitoreo de cultivos, drones agrícolas, fumigación autónoma, AgriDron, agricultura inteligente"
+    />
+    <meta name="author" content="AgriDron Solutions Team" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://agridronapp.web.app/" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://agridronapp.web.app/" />
+    <meta property="og:title" content="AgriDron Solutions - Agricultura de Precisión con Drones" />
+    <meta
+      property="og:description"
+      content="Optimiza tus cultivos con fumigación autónoma, monitoreo en tiempo real y reportes inteligentes. AgriDron transforma la agricultura tradicional en agricultura de precisión."
+    />
+    <meta property="og:image" content="https://agridronapp.web.app/assets/images/app-dashboard.png" />
+    <meta property="og:site_name" content="AgriDron Solutions" />
+    <meta property="og:locale" content="es_PE" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://agridronapp.web.app/" />
+    <meta name="twitter:title" content="AgriDron Solutions - Agricultura de Precisión con Drones" />
+    <meta
+      name="twitter:description"
+      content="Optimiza tus cultivos con fumigación autónoma, monitoreo en tiempo real y reportes inteligentes con AgriDron."
+    />
+    <meta name="twitter:image" content="https://agridronapp.web.app/assets/images/app-dashboard.png" />
+
+    <!-- Fonts & Styles -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,7 +50,7 @@
   <body>
     <div class="page-shell">
       <header class="site-header" id="inicio">
-        <div class="logo" aria-label="AgiDron Solutions logo">
+        <div class="logo" aria-label="AgriDron Solutions logo">
           <div class="logo-mark">
             <span class="leaf leaf-1"></span>
             <span class="leaf leaf-2"></span>
@@ -46,8 +81,10 @@
           <nav class="main-nav" aria-label="Navegación principal" data-i18n-aria-label="nav.primaryLabel">
             <a href="#inicio" data-i18n="nav.home">Inicio</a>
             <a href="#features" data-i18n="nav.features">Funcionalidades</a>
+            <a href="#showcase" data-i18n="nav.showcase">Plataforma</a>
             <a href="#how-it-works" data-i18n="nav.howItWorks">Cómo Funciona</a>
             <a href="#audiences" data-i18n="nav.audience">Para Quién</a>
+            <a href="#video-section" data-i18n="nav.video">Video Demo</a>
             <a href="#planes" data-i18n="nav.plans">Planes</a>
             <a href="#faq" data-i18n="nav.faq">Preguntas frecuentes</a>
             <a href="#contacto" data-i18n="nav.contact">Contacto</a>
@@ -59,6 +96,16 @@
             <button type="button" data-language="en" aria-pressed="false">EN</button>
           </div>
           <a href="#contacto" class="demo-button" data-i18n="nav.demo">Solicitar Demo</a>
+          <a
+            href="https://agridronapp.web.app/inicio"
+            class="app-nav-button"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Ir a la aplicación web de AgriDron"
+          >
+            <span data-i18n="nav.appButton">Ir a la App</span>
+            <span aria-hidden="true">↗</span>
+          </a>
         </div>
       </header>
 
@@ -105,17 +152,38 @@
           </div>
 
           <div class="cta-row">
-            <a class="primary-cta" href="#planes"><span data-i18n="hero.plansCta">Conoce nuestros planes</span> <span>→</span></a>
-            <a class="secondary-cta" href="#how-it-works">
+            <a
+              class="primary-cta"
+              href="https://agridronapp.web.app/inicio"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Probar la aplicación AgriDron ahora"
+            >
+              <span data-i18n="hero.tryNowCta">Pruébalo ahora</span> <span>→</span>
+            </a>
+            <a class="secondary-cta" href="#showcase">
               <span class="play-icon"></span>
-              <span data-i18n="hero.howItWorksCta">Ver cómo funciona</span>
+              <span data-i18n="hero.seeAppCta">Ver la plataforma</span>
             </a>
           </div>
         </div>
 
-        <div class="scene" aria-label="Imagen placeholder de la plataforma AgriDron">
-          <div class="scene-placeholder">
-            <img src="assets/images/hero-agricultura.jpg" alt="Campo agrícola" />
+        <div class="scene" aria-label="Demostración visual de la plataforma AgriDron">
+          <div class="hero-preview-frame">
+            <div class="hero-preview-bar">
+              <div class="preview-dots" aria-hidden="true">
+                <span></span><span></span><span></span>
+              </div>
+              <div class="preview-url">agridronapp.web.app/inicio</div>
+              <span class="live-pill" data-i18n="hero.livePill">En vivo</span>
+            </div>
+            <a href="https://agridronapp.web.app/inicio" target="_blank" rel="noopener noreferrer" title="Abrir Web Application">
+              <img
+                src="assets/images/app-dashboard.png"
+                alt="Panel de control principal de la plataforma AgriDron Solutions"
+                data-i18n-alt="hero.appImageAlt"
+              />
+            </a>
           </div>
         </div>
       </main>
@@ -138,9 +206,7 @@
             </div>
             <h3 data-i18n="features.missionTitle">Planificación de misiones</h3>
             <p>
-              <span data-i18n="features.missionDescription">Define áreas de fumigación en un mapa interactivo, programa tus misiones
-              y optimiza recursos.
-              </span>
+              <span data-i18n="features.missionDescription">Define áreas de fumigación en un mapa interactivo, programa tus misiones y optimiza recursos.</span>
             </p>
             <div class="feature-arrow">→</div>
           </article>
@@ -179,6 +245,80 @@
             <div class="feature-arrow">→</div>
           </article>
         </div>
+      </section>
+
+      <!-- SECCIÓN APP SHOWCASE: Capturas de la plataforma real conectada -->
+      <section class="app-showcase" id="showcase">
+        <div class="section-title simple">
+          <span class="section-eyebrow" data-i18n="showcase.eyebrow">Plataforma Web en tiempo real</span>
+          <h2 data-i18n="showcase.title">Conoce AgriDron por dentro</h2>
+          <p data-i18n="showcase.description">
+            Explora las vistas de la aplicación web conectada a nuestra arquitectura de servicios. Diseñada para operar en campo o desde oficina.
+          </p>
+        </div>
+
+        <div class="showcase-tabs" role="tablist" aria-label="Vistas de la plataforma">
+          <button type="button" class="showcase-tab active" role="tab" aria-selected="true" data-target="panel-dashboard" data-i18n="showcase.tabDashboard">
+            Dashboard Operativo
+          </button>
+          <button type="button" class="showcase-tab" role="tab" aria-selected="false" data-target="panel-fincas" data-i18n="showcase.tabFincas">
+            Gestión de Fincas y Parcelas
+          </button>
+          <button type="button" class="showcase-tab" role="tab" aria-selected="false" data-target="panel-misiones" data-i18n="showcase.tabMisiones">
+            Planificación de Vuelos
+          </button>
+        </div>
+
+        <!-- Panel 1: Dashboard -->
+        <article class="showcase-panel active" id="panel-dashboard" role="tabpanel">
+          <div class="showcase-info">
+            <h3 data-i18n="showcase.tabDashboardTitle">Panel de control integral</h3>
+            <p data-i18n="showcase.tabDashboardDesc">
+              Visualiza fincas registradas, hectáreas totales, misiones en curso y las condiciones climáticas en tiempo real para tomar decisiones inmediatas.
+            </p>
+            <a href="https://agridronapp.web.app/inicio" class="showcase-cta" target="_blank" rel="noopener noreferrer">
+              <span data-i18n="showcase.tabDashboardCta">Abrir Dashboard</span>
+              <span aria-hidden="true">→</span>
+            </a>
+          </div>
+          <div class="showcase-frame">
+            <img src="assets/images/app-dashboard.png" alt="Dashboard de operaciones de AgriDron" />
+          </div>
+        </article>
+
+        <!-- Panel 2: Fincas -->
+        <article class="showcase-panel" id="panel-fincas" role="tabpanel">
+          <div class="showcase-info">
+            <h3 data-i18n="showcase.tabFincasTitle">Delimitación y mapeo cartográfico</h3>
+            <p data-i18n="showcase.tabFincasDesc">
+              Registra tus predios y dibuja polígonos sobre el mapa satelital. Administra lotes de cultivo y supervisa las dimensiones exactas de tus parcelas.
+            </p>
+            <a href="https://agridronapp.web.app/fincas" class="showcase-cta" target="_blank" rel="noopener noreferrer">
+              <span data-i18n="showcase.tabFincasCta">Ir a Fincas</span>
+              <span aria-hidden="true">→</span>
+            </a>
+          </div>
+          <div class="showcase-frame">
+            <img src="assets/images/app-fincas.png" alt="Gestión de fincas y parcelas en AgriDron" />
+          </div>
+        </article>
+
+        <!-- Panel 3: Misiones -->
+        <article class="showcase-panel" id="panel-misiones" role="tabpanel">
+          <div class="showcase-info">
+            <h3 data-i18n="showcase.tabMisionesTitle">Misiones seguras con drones</h3>
+            <p data-i18n="showcase.tabMisionesDesc">
+              Programa vuelos de fumigación paso a paso: selecciona la parcela, valida el pronóstico meteorológico y define los insumos agrícolas con precisión.
+            </p>
+            <a href="https://agridronapp.web.app/misiones" class="showcase-cta" target="_blank" rel="noopener noreferrer">
+              <span data-i18n="showcase.tabMisionesCta">Ir a Misiones</span>
+              <span aria-hidden="true">→</span>
+            </a>
+          </div>
+          <div class="showcase-frame">
+            <img src="assets/images/app-misiones.png" alt="Planificación de misiones de fumigación" />
+          </div>
+        </article>
       </section>
 
       <section class="how-it-works" id="how-it-works">
@@ -246,6 +386,7 @@
         </div>
       </section>
 
+      <!-- SECCIÓN SEGMENTOS OBJETIVO CON CALLS-TO-ACTION REQUERIDOS POR EL ENUNCIADO -->
       <section class="audiences" id="audiences">
         <div class="section-title simple">
           <h2 data-i18n="audiences.title">Para quién</h2>
@@ -260,6 +401,16 @@
             <div class="audience-body">
               <h3 data-i18n="audiences.farmersTitle">Agricultores</h3>
               <p data-i18n="audiences.farmersDescription">Gestiona tus fincas, parcelas y operaciones desde una sola plataforma.</p>
+              <a
+                href="https://agridronapp.web.app/fincas"
+                class="audience-cta"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Gestionar fincas y parcelas para agricultores"
+              >
+                <span data-i18n="audiences.farmersCta">Gestionar fincas y parcelas</span>
+                <span aria-hidden="true">→</span>
+              </a>
             </div>
           </article>
 
@@ -270,8 +421,85 @@
             <div class="audience-body">
               <h3 data-i18n="audiences.operatorsTitle">Operadores</h3>
               <p data-i18n="audiences.operatorsDescription">Ejecuta y monitorea las misiones con información precisa y en tiempo real.</p>
+              <a
+                href="https://agridronapp.web.app/misiones"
+                class="audience-cta"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Monitorear misiones y drones para operadores"
+              >
+                <span data-i18n="audiences.operatorsCta">Monitorear misiones y drones</span>
+                <span aria-hidden="true">→</span>
+              </a>
             </div>
           </article>
+        </div>
+      </section>
+
+      <!-- SECCIÓN VIDEO ABOUT-THE-PRODUCT REQUERIDA POR EL ENUNCIADO -->
+      <section class="video-section" id="video-section">
+        <div class="section-title simple">
+          <span class="section-eyebrow" data-i18n="video.eyebrow">Video Demostrativo</span>
+          <h2 data-i18n="video.title">Video About-the-Product</h2>
+          <p data-i18n="video.description">
+            Conoce cómo AgriDron Solutions transforma las labores agrícolas: reducción de costos, protección de los operarios y fumigación milimétrica sin desperdicio.
+          </p>
+        </div>
+
+        <div class="video-container">
+          <div class="video-screen">
+            <div class="video-screen-bg" aria-hidden="true"></div>
+            <div class="video-screen-content">
+              <span class="video-badge" data-i18n="video.badge">1-3 minutos</span>
+              <h3 data-i18n="video.titleCard">AgriDron Solutions: Agricultura de Precisión en Acción</h3>
+              <p data-i18n="video.subCard">Fumigación autónoma con drones y monitoreo agronómico inteligente</p>
+              <button
+                type="button"
+                class="video-play-btn"
+                id="play-video-btn"
+                aria-label="Reproducir video demostrativo"
+                data-i18n-aria-label="video.playBtn"
+              >
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M8 5v14l11-7z"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="video-actions">
+            <a
+              href="https://www.youtube.com"
+              class="video-action-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span data-i18n="video.openYoutube">Ver en YouTube</span>
+              <span aria-hidden="true">↗</span>
+            </a>
+            <a
+              href="https://agridronapp.web.app/inicio"
+              class="video-action-link primary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span data-i18n="video.openApp">Probar Web App</span>
+              <span aria-hidden="true">→</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Modal de Video -->
+        <div class="video-modal" id="video-modal" aria-hidden="true" role="dialog" aria-label="Reproductor de Video AgriDron">
+          <div class="video-backdrop"></div>
+          <div class="video-dialog">
+            <button type="button" class="video-close-btn" id="close-video-btn" aria-label="Cerrar video">&times;</button>
+            <iframe
+              id="video-iframe"
+              title="Video demostrativo AgriDron Solutions"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
         </div>
       </section>
 
@@ -447,28 +675,70 @@
             <ul>
               <li><a href="#inicio" data-i18n="nav.home">Inicio</a></li>
               <li><a href="#features" data-i18n="nav.features">Funcionalidades</a></li>
+              <li><a href="#showcase" data-i18n="nav.showcase">Plataforma</a></li>
               <li><a href="#how-it-works" data-i18n="nav.howItWorks">Cómo funciona</a></li>
               <li><a href="#audiences" data-i18n="nav.audience">Para quién</a></li>
               <li><a href="#planes" data-i18n="nav.plans">Planes</a></li>
               <li><a href="#faq" data-i18n="nav.faq">Preguntas frecuentes</a></li>
-              <li><a href="#contacto" data-i18n="nav.contact">Contacto</a></li>
-              <li><a href="#team-section" data-i18n="nav.team">Nuestro equipo</a></li>
+              <li><a href="terminos.html" data-i18n="footer.terms">Términos y condiciones</a></li>
+              <li><a href="https://agridronapp.web.app/inicio" target="_blank" rel="noopener noreferrer" data-i18n="footer.appLink">Acceso a la Web Application</a></li>
             </ul>
           </div>
 
           <div class="footer-contact">
-            <h4 data-i18n="nav.contact">Contacto</h4>
+            <h4 data-i18n="footer.contact">Contacto</h4>
             <ul>
               <li><a href="mailto:info@agridron.com">info@agridron.com</a></li>
-              <li><a href="tel:+51999999999">+51 999 999 999</a></li>
+              <li><a href="tel:+51987654321">+51 987 654 321</a></li>
               <li>Lima, Perú</li>
             </ul>
           </div>
 
-          <div class="footer-socials" aria-label="Redes sociales">
-            <span class="social fb">f</span>
-            <span class="social in">in</span>
-            <span class="social ig">◌</span>
+          <div class="footer-socials" aria-label="Redes sociales" data-i18n-aria-label="footer.socialLabel">
+            <a
+              href="https://facebook.com/agridron"
+              class="social fb"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook de AgriDron"
+            >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+              </svg>
+            </a>
+            <a
+              href="https://linkedin.com/company/agridron"
+              class="social in"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn de AgriDron"
+            >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+            </a>
+            <a
+              href="https://instagram.com/agridron"
+              class="social ig"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram de AgriDron"
+            >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              </svg>
+            </a>
+            <a
+              href="https://youtube.com/@agridron"
+              class="social yt"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="YouTube de AgriDron"
+            >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+              </svg>
+            </a>
           </div>
         </div>
 

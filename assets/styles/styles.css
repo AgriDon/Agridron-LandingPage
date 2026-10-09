@@ -2826,3 +2826,462 @@ body {
     transition-duration: 0.01ms !important;
   }
 }
+
+
+/* ==========================================================================
+   AGRIDRON - ENHANCEMENTS FOR RUBRIC & COURSE ASSIGNMENT CRITERIA
+   ========================================================================== */
+
+/* Hero Preview Frame with Realistic Web App Screen */
+.hero-preview-frame {
+  position: relative;
+  width: 100%;
+  max-width: 640px;
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 24px 60px rgba(11, 74, 58, 0.22), 0 0 0 1px rgba(15, 85, 68, 0.12);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero-preview-frame:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 30px 70px rgba(11, 74, 58, 0.28), 0 0 0 1px rgba(15, 85, 68, 0.18);
+}
+
+.hero-preview-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 16px;
+  background: #f1f6f3;
+  border-bottom: 1px solid rgba(15, 85, 68, 0.1);
+  font-size: 0.8rem;
+}
+
+.preview-dots {
+  display: flex;
+  gap: 6px;
+}
+
+.preview-dots span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.preview-dots span:nth-child(1) { background: #ff5f56; }
+.preview-dots span:nth-child(2) { background: #ffbd2e; }
+.preview-dots span:nth-child(3) { background: #27c93f; }
+
+.preview-url {
+  background: #ffffff;
+  padding: 3px 14px;
+  border-radius: 6px;
+  color: var(--muted);
+  font-weight: 500;
+  font-size: 0.78rem;
+  letter-spacing: -0.01em;
+  border: 1px solid rgba(15, 85, 68, 0.1);
+}
+
+.live-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #0e8d66;
+  background: rgba(29, 162, 126, 0.12);
+  padding: 3px 10px;
+  border-radius: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.live-pill::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #1da27e;
+  box-shadow: 0 0 6px rgba(29, 162, 126, 0.8);
+}
+
+.hero-preview-frame img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* App Navbar Action */
+.app-nav-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: 1.5px solid #1da27e;
+  border-radius: 14px;
+  background: rgba(29, 162, 126, 0.08);
+  color: #0e7d66;
+  font-weight: 700;
+  font-size: 1.02rem;
+  padding: 0.85rem 1.4rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.app-nav-button:hover {
+  background: #1da27e;
+  color: #ffffff;
+  box-shadow: 0 8px 18px rgba(16, 108, 83, 0.2);
+  transform: translateY(-1px);
+}
+
+/* Segment Call-To-Action buttons */
+.audience-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 18px;
+  padding: 0.85rem 1.45rem;
+  border-radius: 12px;
+  background: linear-gradient(180deg, #1da27e 0%, #0f8e74 100%);
+  color: #ffffff !important;
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-decoration: none;
+  box-shadow: 0 6px 16px rgba(16, 108, 83, 0.18);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.audience-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(16, 108, 83, 0.28);
+}
+
+/* Platform Showcase Section */
+.app-showcase {
+  max-width: 1540px;
+  margin: 0 auto;
+  padding: clamp(48px, 6vw, 84px) clamp(22px, 5vw, 72px);
+}
+
+.showcase-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin: 32px auto 40px;
+  flex-wrap: wrap;
+}
+
+.showcase-tab {
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(17, 90, 74, 0.16);
+  border-radius: 14px;
+  padding: 12px 24px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--muted);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.showcase-tab:hover {
+  border-color: #1da27e;
+  color: #0c5a4f;
+}
+
+.showcase-tab.active {
+  background: linear-gradient(180deg, #1da27e 0%, #0f8e74 100%);
+  color: #ffffff;
+  border-color: transparent;
+  box-shadow: 0 8px 20px rgba(16, 108, 83, 0.22);
+}
+
+.showcase-panel {
+  display: none;
+  grid-template-columns: 1fr 1.35fr;
+  gap: 40px;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 38px;
+  border: 1px solid rgba(17, 90, 74, 0.12);
+  box-shadow: 0 16px 44px rgba(14, 74, 57, 0.08);
+}
+
+.showcase-panel.active {
+  display: grid;
+  animation: fadeIn 0.3s ease;
+}
+
+.showcase-info h3 {
+  font-size: clamp(1.6rem, 2.2vw, 2.4rem);
+  color: #0c5a4f;
+  margin: 0 0 16px;
+  line-height: 1.2;
+}
+
+.showcase-info p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: rgba(13, 61, 52, 0.85);
+  margin: 0 0 24px;
+}
+
+.showcase-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0.95rem 1.8rem;
+  border-radius: 14px;
+  background: linear-gradient(180deg, #1da27e 0%, #0f8e74 100%);
+  color: #ffffff !important;
+  font-weight: 700;
+  font-size: 1.05rem;
+  text-decoration: none;
+  box-shadow: 0 8px 20px rgba(16, 108, 83, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.showcase-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 26px rgba(16, 108, 83, 0.28);
+}
+
+.showcase-frame {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 14px 36px rgba(12, 60, 48, 0.14);
+  border: 1px solid rgba(17, 90, 74, 0.12);
+}
+
+.showcase-frame img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Video Section (Video About the Product) */
+.video-section {
+  max-width: 1540px;
+  margin: 0 auto;
+  padding: clamp(48px, 6vw, 84px) clamp(22px, 5vw, 72px);
+}
+
+.video-container {
+  max-width: 1000px;
+  margin: 36px auto 0;
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 24px;
+  border: 1px solid rgba(17, 90, 74, 0.14);
+  box-shadow: 0 18px 48px rgba(14, 74, 57, 0.1);
+  text-align: center;
+}
+
+.video-screen {
+  position: relative;
+  width: 100%;
+  min-height: 420px;
+  border-radius: 16px;
+  overflow: hidden;
+  background: linear-gradient(135deg, #093b31 0%, #0d5a49 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  padding: 30px;
+}
+
+.video-screen-bg {
+  position: absolute;
+  inset: 0;
+  background: url("../images/hero-agricultura.jpg") center/cover no-repeat;
+  opacity: 0.35;
+  filter: blur(2px);
+}
+
+.video-screen-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  max-width: 600px;
+}
+
+.video-badge {
+  display: inline-flex;
+  padding: 4px 14px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.18);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.video-screen-content h3 {
+  font-size: clamp(1.5rem, 2.4vw, 2.2rem);
+  margin: 0;
+  color: #ffffff;
+}
+
+.video-screen-content p {
+  font-size: 1.02rem;
+  color: rgba(255, 255, 255, 0.88);
+  margin: 0;
+}
+
+.video-play-btn {
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  background: #ffffff;
+  color: #0e8d66;
+  border: none;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.35);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  margin-top: 10px;
+}
+
+.video-play-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.45);
+}
+
+.video-play-btn svg {
+  width: 32px;
+  height: 32px;
+  margin-left: 4px;
+}
+
+.video-actions {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 24px;
+  flex-wrap: wrap;
+}
+
+.video-action-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0.8rem 1.4rem;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-decoration: none;
+  border: 1px solid rgba(17, 90, 74, 0.2);
+  color: #0c5a4f;
+  background: #f7faf8;
+  transition: all 0.2s ease;
+}
+
+.video-action-link:hover {
+  background: #eef5f1;
+  border-color: #1da27e;
+}
+
+.video-action-link.primary {
+  background: linear-gradient(180deg, #1da27e 0%, #0f8e74 100%);
+  color: #ffffff;
+  border: none;
+}
+
+/* Video Modal */
+.video-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.22s ease, visibility 0.22s ease;
+}
+
+.video-modal.is-visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.video-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(8, 45, 38, 0.75);
+  backdrop-filter: blur(8px);
+}
+
+.video-dialog {
+  position: relative;
+  width: min(100%, 920px);
+  aspect-ratio: 16 / 9;
+  background: #000000;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.5);
+  z-index: 101;
+}
+
+.video-dialog iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.video-close-btn {
+  position: absolute;
+  top: 14px;
+  right: 18px;
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+  font-size: 1.6rem;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  line-height: 1;
+  z-index: 102;
+  transition: background 0.2s ease;
+}
+
+.video-close-btn:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* Footer Social Links */
+.footer-socials a.social {
+  text-decoration: none;
+  transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+}
+
+.footer-socials a.social:hover {
+  transform: translateY(-3px);
+  background: #1da27e;
+  border-color: #1da27e;
+  color: #ffffff;
+}
+
+@media (max-width: 960px) {
+  .showcase-panel {
+    grid-template-columns: 1fr;
+  }
+}

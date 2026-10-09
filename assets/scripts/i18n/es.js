@@ -5,13 +5,16 @@ window.AgridronTranslations.es = {
     primaryLabel: "Navegación principal",
     home: "Inicio",
     features: "Funcionalidades",
+    showcase: "Plataforma",
     howItWorks: "Cómo funciona",
     audience: "Para quién",
+    video: "Video Demo",
     plans: "Planes",
     faq: "Preguntas frecuentes",
     contact: "Contacto",
     team: "Nuestro equipo",
     demo: "Solicitar demo",
+    appButton: "Ir a la App",
     openMenu: "Abrir menú de navegación",
     closeMenu: "Cerrar menú de navegación",
   },
@@ -23,8 +26,10 @@ window.AgridronTranslations.es = {
     benefitCosts: "Reduce costos",
     benefitProductivity: "Aumenta tu productividad",
     benefitSafety: "Protege a tu equipo",
-    plansCta: "Conoce nuestros planes",
-    howItWorksCta: "Ver cómo funciona",
+    tryNowCta: "Pruébalo ahora",
+    seeAppCta: "Ver la plataforma",
+    livePill: "En vivo",
+    appImageAlt: "Panel de control principal de la plataforma AgriDron Solutions",
   },
   features: {
     title: "Nuestras funcionalidades",
@@ -38,6 +43,27 @@ window.AgridronTranslations.es = {
     weatherTitle: "Consulta las condiciones climáticas",
     weatherDescription:
       "Consulta el pronóstico del clima y determina el momento adecuado para realizar tus misiones.",
+  },
+  showcase: {
+    eyebrow: "Plataforma Web en tiempo real",
+    title: "Conoce AgriDron por dentro",
+    description:
+      "Explora las vistas de la aplicación web conectada a nuestra arquitectura de servicios. Diseñada para operar en campo o desde oficina.",
+    tabDashboard: "Dashboard Operativo",
+    tabDashboardTitle: "Panel de control integral",
+    tabDashboardDesc:
+      "Visualiza fincas registradas, hectáreas totales, misiones en curso y las condiciones climáticas en tiempo real para tomar decisiones inmediatas.",
+    tabDashboardCta: "Abrir Dashboard",
+    tabFincas: "Gestión de Fincas y Parcelas",
+    tabFincasTitle: "Delimitación y mapeo cartográfico",
+    tabFincasDesc:
+      "Registra tus predios y dibuja polígonos sobre el mapa satelital. Administra lotes de cultivo y supervisa las dimensiones exactas de tus parcelas.",
+    tabFincasCta: "Ir a Fincas",
+    tabMisiones: "Planificación de Vuelos",
+    tabMisionesTitle: "Misiones seguras con drones",
+    tabMisionesDesc:
+      "Programa vuelos de fumigación paso a paso: selecciona la parcela, valida el pronóstico meteorológico y define los insumos agrícolas con precisión.",
+    tabMisionesCta: "Ir a Misiones",
   },
   steps: {
     title: "Cómo funciona",
@@ -57,11 +83,25 @@ window.AgridronTranslations.es = {
     farmersTitle: "Agricultores",
     farmersDescription:
       "Gestiona tus fincas, parcelas y operaciones desde una sola plataforma.",
+    farmersCta: "Gestionar fincas y parcelas",
     farmersImageAlt: "Agricultores trabajando en el campo",
     operatorsTitle: "Operadores",
     operatorsDescription:
       "Ejecuta y monitorea las misiones con información precisa y en tiempo real.",
+    operatorsCta: "Monitorear misiones y drones",
     operatorsImageAlt: "Operador preparando un dron agrícola",
+  },
+  video: {
+    eyebrow: "Video Demostrativo",
+    title: "Video About-the-Product",
+    description:
+      "Conoce cómo AgriDron Solutions transforma las labores agrícolas: reducción de costos, protección de los operarios y fumigación milimétrica sin desperdicio.",
+    badge: "1-3 minutos",
+    titleCard: "AgriDron Solutions: Agricultura de Precisión en Acción",
+    subCard: "Fumigación autónoma con drones y monitoreo agronómico inteligente",
+    playBtn: "Reproducir video promocional",
+    openYoutube: "Ver en YouTube",
+    openApp: "Probar Web App",
   },
   plans: {
     eyebrow: "Planes para cada operación",
@@ -168,6 +208,11 @@ window.AgridronTranslations.es = {
   },
   footer: {
     links: "Enlaces",
+    contact: "Contacto",
+    terms: "Términos y condiciones",
+    ethics: "Ética profesional (ACM/IEEE & CIP)",
+    appLink: "Acceso a la Web Application",
+    socialLabel: "Redes sociales",
     copyright: "© 2026 AgriDron Solutions. Todos los derechos reservados.",
   },
 };

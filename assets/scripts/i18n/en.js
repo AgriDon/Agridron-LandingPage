@@ -5,13 +5,16 @@ window.AgridronTranslations.en = {
     primaryLabel: "Main navigation",
     home: "Home",
     features: "Features",
+    showcase: "Platform",
     howItWorks: "How it works",
     audience: "Who it's for",
+    video: "Video Demo",
     plans: "Plans",
     faq: "FAQ",
     contact: "Contact",
     team: "Our team",
     demo: "Request a demo",
+    appButton: "Go to App",
     openMenu: "Open navigation menu",
     closeMenu: "Close navigation menu",
   },
@@ -23,8 +26,10 @@ window.AgridronTranslations.en = {
     benefitCosts: "Reduce costs",
     benefitProductivity: "Increase productivity",
     benefitSafety: "Protect your team",
-    plansCta: "Explore our plans",
-    howItWorksCta: "See how it works",
+    tryNowCta: "Try it now",
+    seeAppCta: "Explore platform",
+    livePill: "Live",
+    appImageAlt: "AgriDron Solutions main control dashboard",
   },
   features: {
     title: "Our features",
@@ -38,6 +43,27 @@ window.AgridronTranslations.en = {
     weatherTitle: "Check weather conditions",
     weatherDescription:
       "Check the forecast and choose the right time to carry out your missions.",
+  },
+  showcase: {
+    eyebrow: "Real-Time Web Platform",
+    title: "Explore AgriDron Inside",
+    description:
+      "Experience our cloud web application connected to our service architecture. Built for both field and office operations.",
+    tabDashboard: "Operations Dashboard",
+    tabDashboardTitle: "Comprehensive control dashboard",
+    tabDashboardDesc:
+      "Track registered farms, total hectares, active missions, and real-time weather forecasts to make timely decisions.",
+    tabDashboardCta: "Open Dashboard",
+    tabFincas: "Farms & Fields Management",
+    tabFincasTitle: "Cartographic field mapping",
+    tabFincasDesc:
+      "Register properties and draw exact boundaries over satellite maps. Organize crops and monitor precise parcel dimensions.",
+    tabFincasCta: "Go to Farms",
+    tabMisiones: "Flight Planning",
+    tabMisionesTitle: "Safe drone missions",
+    tabMisionesDesc:
+      "Schedule spraying flights step-by-step: select parcels, verify meteorological conditions, and specify agricultural inputs with precision.",
+    tabMisionesCta: "Go to Missions",
   },
   steps: {
     title: "How it works",
@@ -57,11 +83,25 @@ window.AgridronTranslations.en = {
     farmersTitle: "Farmers",
     farmersDescription:
       "Manage your farms, fields, and operations from a single platform.",
+    farmersCta: "Manage farms & fields",
     farmersImageAlt: "Farmers working in a field",
     operatorsTitle: "Operators",
     operatorsDescription:
       "Run and monitor missions with accurate, real-time information.",
+    operatorsCta: "Monitor missions & drones",
     operatorsImageAlt: "Operator preparing an agricultural drone",
+  },
+  video: {
+    eyebrow: "Product Demo",
+    title: "Video About-the-Product",
+    description:
+      "Watch how AgriDron Solutions transforms agriculture: cutting costs, protecting personnel, and delivering millimetric spraying without chemical drift.",
+    badge: "1-3 minutes",
+    titleCard: "AgriDron Solutions: Precision Agriculture in Action",
+    subCard: "Autonomous drone spraying and intelligent crop monitoring",
+    playBtn: "Play promotional video",
+    openYoutube: "Watch on YouTube",
+    openApp: "Try Web App",
   },
   plans: {
     eyebrow: "Plans for every operation",
@@ -168,6 +208,11 @@ window.AgridronTranslations.en = {
   },
   footer: {
     links: "Links",
+    contact: "Contact",
+    terms: "Terms & Conditions",
+    ethics: "Professional Ethics (ACM/IEEE & CIP)",
+    appLink: "Web Application Access",
+    socialLabel: "Social media",
     copyright: "© 2026 AgriDron Solutions. All rights reserved.",
   },
 };
