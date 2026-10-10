@@ -447,35 +447,50 @@
         </div>
 
         <div class="video-container">
-          <div class="video-screen">
-            <div class="video-screen-bg" aria-hidden="true"></div>
-            <div class="video-screen-content">
-              <span class="video-badge" data-i18n="video.badge">1-3 minutos</span>
-              <h3 data-i18n="video.titleCard">AgriDron Solutions: Agricultura de Precisión en Acción</h3>
-              <p data-i18n="video.subCard">Fumigación autónoma con drones y monitoreo agronómico inteligente</p>
-              <button
-                type="button"
-                class="video-play-btn"
-                id="play-video-btn"
-                aria-label="Reproducir video demostrativo"
-                data-i18n-aria-label="video.playBtn"
-              >
-                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                  <path d="M8 5v14l11-7z"/>
-                </svg>
-              </button>
+          <div class="video-player-wrapper" id="video-player-wrapper">
+            <video
+              id="product-video"
+              class="product-video-element"
+              controls
+              playsinline
+              preload="metadata"
+              poster="assets/images/hero-agricultura.jpg"
+              aria-label="Video promocional About-the-Product de AgriDron Solutions"
+            >
+              <source src="assets/images/presentationvideo.mp4" type="video/mp4" />
+              Tu navegador no soporta el formato de video MP4.
+            </video>
+
+            <div class="video-overlay" id="video-overlay">
+              <div class="video-screen-bg" aria-hidden="true"></div>
+              <div class="video-screen-content">
+                <span class="video-badge" data-i18n="video.badge">1-3 minutos</span>
+                <h3 data-i18n="video.titleCard">AgriDron Solutions: Agricultura de Precisión en Acción</h3>
+                <p data-i18n="video.subCard">Fumigación autónoma con drones y monitoreo agronómico inteligente</p>
+                <button
+                  type="button"
+                  class="video-play-btn"
+                  id="play-video-btn"
+                  aria-label="Reproducir video demostrativo"
+                  data-i18n-aria-label="video.playBtn"
+                >
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M8 5v14l11-7z"/>
+                  </svg>
+                </button>
+              </div>
             </div>
           </div>
+
           <div class="video-actions">
-            <a
-              href="https://www.youtube.com"
+            <button
+              type="button"
               class="video-action-link"
-              target="_blank"
-              rel="noopener noreferrer"
+              id="play-video-action-btn"
             >
-              <span data-i18n="video.openYoutube">Ver en YouTube</span>
-              <span aria-hidden="true">↗</span>
-            </a>
+              <span data-i18n="video.playLocal">Reproducir Video</span>
+              <span aria-hidden="true">▶</span>
+            </button>
             <a
               href="https://agridronapp.web.app/inicio"
               class="video-action-link primary"
@@ -485,20 +500,6 @@
               <span data-i18n="video.openApp">Probar Web App</span>
               <span aria-hidden="true">→</span>
             </a>
-          </div>
-        </div>
-
-        <!-- Modal de Video -->
-        <div class="video-modal" id="video-modal" aria-hidden="true" role="dialog" aria-label="Reproductor de Video AgriDron">
-          <div class="video-backdrop"></div>
-          <div class="video-dialog">
-            <button type="button" class="video-close-btn" id="close-video-btn" aria-label="Cerrar video">&times;</button>
-            <iframe
-              id="video-iframe"
-              title="Video demostrativo AgriDron Solutions"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
           </div>
         </div>
       </section>

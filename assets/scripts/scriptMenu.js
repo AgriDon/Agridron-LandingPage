@@ -175,44 +175,34 @@
     });
   });
 
-  // Video play button handling
+  // Video About-the-Product HTML5 player handling
+  const productVideo = document.getElementById("product-video");
+  const videoOverlay = document.getElementById("video-overlay");
   const playVideoBtn = document.getElementById("play-video-btn");
-  const videoModal = document.getElementById("video-modal");
-  const closeVideoBtn = document.getElementById("close-video-btn");
-  const videoIframe = document.getElementById("video-iframe");
+  const playVideoActionBtn = document.getElementById("play-video-action-btn");
 
-  if (playVideoBtn && videoModal) {
-    playVideoBtn.addEventListener("click", () => {
-      videoModal.classList.add("is-visible");
-      videoModal.setAttribute("aria-hidden", "false");
-      if (videoIframe && !videoIframe.src) {
-        videoIframe.src = "https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ?autoplay=1";
-      }
-    });
-
-    function closeVideo() {
-      videoModal.classList.remove("is-visible");
-      videoModal.setAttribute("aria-hidden", "true");
-      if (videoIframe) {
-        const curSrc = videoIframe.src;
-        videoIframe.src = "";
-      }
+  function playProductVideo() {
+    if (videoOverlay) {
+      videoOverlay.classList.add("is-hidden");
     }
-
-    if (closeVideoBtn) {
-      closeVideoBtn.addEventListener("click", closeVideo);
+    if (productVideo) {
+      productVideo.play().catch(() => {});
     }
+  }
 
-    videoModal.addEventListener("click", (e) => {
-      if (e.target === videoModal || e.target.classList.contains("video-backdrop")) {
-        closeVideo();
-      }
+  if (playVideoBtn) {
+    playVideoBtn.addEventListener("click", playProductVideo);
+  }
+  if (playVideoActionBtn) {
+    playVideoActionBtn.addEventListener("click", playProductVideo);
+  }
+
+  if (productVideo && videoOverlay) {
+    productVideo.addEventListener("play", () => {
+      videoOverlay.classList.add("is-hidden");
     });
-
-    document.addEventListener("keydown", (e) => {
-      if (e.key === "Escape" && videoModal.classList.contains("is-visible")) {
-        closeVideo();
-      }
+    productVideo.addEventListener("ended", () => {
+      videoOverlay.classList.remove("is-hidden");
     });
   }
 

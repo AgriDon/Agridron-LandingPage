@@ -101,6 +101,7 @@ window.AgridronTranslations.en = {
     subCard: "Autonomous drone spraying and intelligent crop monitoring",
     playBtn: "Play promotional video",
     openYoutube: "Watch on YouTube",
+    playLocal: "Play Video",
     openApp: "Try Web App",
   },
   plans: {

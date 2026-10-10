@@ -101,6 +101,7 @@ window.AgridronTranslations.es = {
     subCard: "Fumigación autónoma con drones y monitoreo agronómico inteligente",
     playBtn: "Reproducir video promocional",
     openYoutube: "Ver en YouTube",
+    playLocal: "Reproducir Video",
     openApp: "Probar Web App",
   },
   plans: {
