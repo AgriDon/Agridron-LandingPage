@@ -69,6 +69,11 @@ window.AgridronTranslations.en = {
     tabDronesDesc:
         "Check each drone's operational status, capacity, flight hours and battery. Send drones to maintenance, report failures and review their service history.",
     tabDronesCta: "Go to Drones",
+    tabConfiguracion: "Settings",
+    tabConfiguracionTitle: "Your account and preferences",
+    tabConfiguracionDesc:
+        "Review your profile details and choose how to receive email notifications, in-app notifications and live weather alerts.",
+    tabConfiguracionCta: "Go to Settings",
   },
   steps: {
     title: "How it works",

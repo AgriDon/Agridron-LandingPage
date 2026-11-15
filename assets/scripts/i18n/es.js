@@ -69,6 +69,11 @@ window.AgridronTranslations.es = {
     tabDronesDesc:
         "Consulta el estado operativo, la capacidad, las horas de vuelo y la batería de cada dron. Envíalos a mantenimiento, reporta fallas y revisa su historial técnico.",
     tabDronesCta: "Ir a Drones",
+    tabConfiguracion: "Configuración",
+    tabConfiguracionTitle: "Tu cuenta y preferencias",
+    tabConfiguracionDesc:
+        "Revisa los datos de tu perfil y elige cómo recibir notificaciones por correo, en la app y alertas climáticas en vivo.",
+    tabConfiguracionCta: "Ir a Configuración",
   },
   steps: {
     title: "Cómo funciona",
