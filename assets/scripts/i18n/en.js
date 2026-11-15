@@ -64,6 +64,11 @@ window.AgridronTranslations.en = {
     tabMisionesDesc:
       "Schedule spraying flights step-by-step: select parcels, verify meteorological conditions, and specify agricultural inputs with precision.",
     tabMisionesCta: "Go to Missions",
+    tabDrones: "Drone Fleet",
+    tabDronesTitle: "Your drone fleet under control",
+    tabDronesDesc:
+        "Check each drone's operational status, capacity, flight hours and battery. Send drones to maintenance, report failures and review their service history.",
+    tabDronesCta: "Go to Drones",
   },
   steps: {
     title: "How it works",

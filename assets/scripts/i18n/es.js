@@ -64,6 +64,11 @@ window.AgridronTranslations.es = {
     tabMisionesDesc:
       "Programa vuelos de fumigación paso a paso: selecciona la parcela, valida el pronóstico meteorológico y define los insumos agrícolas con precisión.",
     tabMisionesCta: "Ir a Misiones",
+    tabDrones: "Flota de Drones",
+    tabDronesTitle: "Flota de drones bajo control",
+    tabDronesDesc:
+        "Consulta el estado operativo, la capacidad, las horas de vuelo y la batería de cada dron. Envíalos a mantenimiento, reporta fallas y revisa su historial técnico.",
+    tabDronesCta: "Ir a Drones",
   },
   steps: {
     title: "Cómo funciona",
