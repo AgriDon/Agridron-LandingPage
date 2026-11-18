@@ -55,7 +55,7 @@
   }
 
   function setLanguage(language) {
-    const selectedLanguage = translations[language] ? language : "es";
+    const selectedLanguage = translations[language] ? language : "en";
     const dictionary = translations[selectedLanguage];
 
     document.documentElement.lang = selectedLanguage;
@@ -95,8 +95,8 @@
     localStorage.setItem("agridron-language", selectedLanguage);
   }
 
-  let currentLanguage = localStorage.getItem("agridron-language") || "es";
-  if (!translations[currentLanguage]) currentLanguage = "es";
+  let currentLanguage = localStorage.getItem("agridron-language") || "en";
+  if (!translations[currentLanguage]) currentLanguage = "en";
   setLanguage(currentLanguage);
 
   languageButtons.forEach((button) => {
