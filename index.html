@@ -492,49 +492,28 @@
 
         <div class="video-container">
           <div class="video-player-wrapper" id="video-player-wrapper">
-            <video
-              id="product-video"
-              class="product-video-element"
-              controls
-              playsinline
-              preload="metadata"
-              poster="assets/images/hero-agricultura.jpg"
-              aria-label="Video promocional About-the-Product de AgriDron Solutions"
-            >
-              <source src="assets/images/presentationvideo.mp4" type="video/mp4" />
-              Tu navegador no soporta el formato de video MP4.
-            </video>
-
-            <div class="video-overlay" id="video-overlay">
-              <div class="video-screen-bg" aria-hidden="true"></div>
-              <div class="video-screen-content">
-                <span class="video-badge" data-i18n="video.badge">1-3 minutos</span>
-                <h3 data-i18n="video.titleCard">AgriDron Solutions: Agricultura de Precisión en Acción</h3>
-                <p data-i18n="video.subCard">Fumigación autónoma con drones y monitoreo agronómico inteligente</p>
-                <button
-                  type="button"
-                  class="video-play-btn"
-                  id="play-video-btn"
-                  aria-label="Reproducir video demostrativo"
-                  data-i18n-aria-label="video.playBtn"
-                >
-                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                    <path d="M8 5v14l11-7z"/>
-                  </svg>
-                </button>
-              </div>
-            </div>
+            <iframe
+              id="product-video-embed"
+              class="video-embed-frame"
+              src="https://www.youtube.com/embed/RdJ2ERaJVjQ"
+              title="AgriDron Solutions - Video About-the-Product"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+              loading="lazy"
+            ></iframe>
           </div>
 
           <div class="video-actions">
-            <button
-              type="button"
+            <a
+              href="https://youtu.be/RdJ2ERaJVjQ"
               class="video-action-link"
-              id="play-video-action-btn"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              <span data-i18n="video.playLocal">Reproducir Video</span>
-              <span aria-hidden="true">▶</span>
-            </button>
+              <span data-i18n="video.openYoutube">Watch on YouTube</span>
+              <span aria-hidden="true">↗</span>
+            </a>
             <a
               href="https://agridronapp.web.app/inicio"
               class="video-action-link primary"
@@ -695,6 +674,44 @@
             <div class="member-avatar avatar-4"></div>
             <div class="member-name">Alexander Vasquez</div>
             <div class="member-role" data-i18n="team.productOwner">Product Owner</div>
+          </div>
+        </div>
+
+        <!-- SECCIÓN VIDEO ABOUT-THE-TEAM REQUERIDA POR EL ENUNCIADO -->
+        <div class="team-video-block" id="team-video-section">
+          <div class="section-title simple">
+            <span class="section-eyebrow" data-i18n="teamVideo.eyebrow">Team Retrospective</span>
+            <h3 data-i18n="teamVideo.title">Video About-the-Team</h3>
+            <p data-i18n="teamVideo.description">
+              Meet the AgriDron Solutions team, our agile collaboration workflow, and each member's contribution during the project.
+            </p>
+          </div>
+
+          <div class="video-container">
+            <div class="video-player-wrapper">
+              <iframe
+                id="team-video-embed"
+                class="video-embed-frame"
+                src="https://www.youtube.com/embed/UU0plReSQPA"
+                title="AgriDron Solutions - Video About-the-Team"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            </div>
+
+            <div class="video-actions">
+              <a
+                href="https://youtu.be/UU0plReSQPA"
+                class="video-action-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span data-i18n="teamVideo.openYoutube">Watch on YouTube</span>
+                <span aria-hidden="true">↗</span>
+              </a>
+            </div>
           </div>
         </div>
       </section>

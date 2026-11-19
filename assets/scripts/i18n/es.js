@@ -217,6 +217,13 @@ window.AgridronTranslations.es = {
     designer: "Diseñador UX/UI",
     productOwner: "Product Owner",
   },
+  teamVideo: {
+    eyebrow: "Retrospectiva del Equipo",
+    title: "Video About-the-Team",
+    description:
+      "Conoce al equipo de AgriDron Solutions, nuestra dinámica de trabajo ágil y el aporte de cada integrante durante el proyecto.",
+    openYoutube: "Ver en YouTube",
+  },
   footer: {
     links: "Enlaces",
     contact: "Contacto",

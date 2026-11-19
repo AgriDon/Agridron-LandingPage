@@ -175,37 +175,6 @@
     });
   });
 
-  // Video About-the-Product HTML5 player handling
-  const productVideo = document.getElementById("product-video");
-  const videoOverlay = document.getElementById("video-overlay");
-  const playVideoBtn = document.getElementById("play-video-btn");
-  const playVideoActionBtn = document.getElementById("play-video-action-btn");
-
-  function playProductVideo() {
-    if (videoOverlay) {
-      videoOverlay.classList.add("is-hidden");
-    }
-    if (productVideo) {
-      productVideo.play().catch(() => {});
-    }
-  }
-
-  if (playVideoBtn) {
-    playVideoBtn.addEventListener("click", playProductVideo);
-  }
-  if (playVideoActionBtn) {
-    playVideoActionBtn.addEventListener("click", playProductVideo);
-  }
-
-  if (productVideo && videoOverlay) {
-    productVideo.addEventListener("play", () => {
-      videoOverlay.classList.add("is-hidden");
-    });
-    productVideo.addEventListener("ended", () => {
-      videoOverlay.classList.remove("is-hidden");
-    });
-  }
-
   if (contactForm && formNote) {
     contactForm.addEventListener("submit", (event) => {
       event.preventDefault();
